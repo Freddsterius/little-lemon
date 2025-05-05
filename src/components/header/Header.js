@@ -3,10 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <img
-        src={require("../../assets/LLLogo.jpg")}
-        alt="little lemon logo"
-      ></img>
+      <img src="./imgs/LLLogo.jpg" alt="little lemon logo"></img>
     </header>
   );
 };
