@@ -1,15 +1,16 @@
 import "./App.css";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
+import Nav from "./components/nav/Nav";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello, World.🌍!</h1>
-      <p>This is a simple text that I am adding for the time being.</p>
-      <p>
-        Beacuse I deleted the spinning logo, I added this to output something on
-        the page.
-      </p>
-      <p>New information/functionalities coming soon, stay tunned ...</p>
+      <Header />
+      <Nav />
+      <Main />
+      <Footer />
     </div>
   );
 }
