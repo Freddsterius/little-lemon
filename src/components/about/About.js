@@ -1,3 +1,4 @@
+/*
 import React from "react";
 
 const About = () => {
@@ -13,3 +14,4 @@ const About = () => {
 };
 
 export default About;
+*/

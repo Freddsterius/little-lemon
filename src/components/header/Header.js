@@ -1,11 +1,13 @@
-import React from "react";
+/*
+mport React from "react";
 
 const Header = () => {
   return (
     <header>
-      <img src="./imgs/LLLogo.jpg" alt="little lemon logo"></img>
+      <img src="./imgs/Logo.svg" alt="little lemon logo"></img>
     </header>
   );
 };
 
 export default Header;
+*/

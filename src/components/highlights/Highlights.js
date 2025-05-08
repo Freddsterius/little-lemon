@@ -1,3 +1,4 @@
+/*
 import React from "react";
 
 const Highlights = () => {
@@ -13,3 +14,4 @@ const Highlights = () => {
 };
 
 export default Highlights;
+*/

@@ -1,3 +1,4 @@
+/*
 import React from "react";
 
 const Testimonials = () => {
@@ -13,3 +14,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+*/

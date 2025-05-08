@@ -1,3 +1,4 @@
+/*
 import React from "react";
 
 const Nav = () => {
@@ -28,3 +29,4 @@ const Nav = () => {
 };
 
 export default Nav;
+*/
