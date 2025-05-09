@@ -3,8 +3,7 @@
   margin: 0;
 }
 body {
-  background-color: aqua;
-  width: 100vw;
+  width: 100%;
 }
 header {
   background-color: white;
@@ -18,18 +17,19 @@ header {
 .website-logo img {
   width: 30vw;
 }
-nav ul {
+header nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: stretch;
 }
-nav ul li {
+header nav ul li {
   margin: 10px;
   padding: 10px;
 }
-nav ul li a {
+header nav ul li a {
+  color: red;
 }
 
 section.hero {
@@ -44,6 +44,8 @@ section.hero {
 .hero img {
   width: 20vw;
   height: 60vh;
+  border-radius: 10px;
+  margin-top: 5px;
 }
 
 section.specials {
@@ -71,10 +73,77 @@ section.specials {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 20vw;
   height: 50vh;
+  margin-bottom: 20px;
 }
 .dish-card img {
   width: 100%; /* Make image take full width */
   height: 25vh; /* Set a fixed height */
   object-fit: cover; /* Crop the image to fill the box */
   display: block;
+}
+
+section.testimonials {
+  background-color: aqua;
+}
+.testimonials-title {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.ratings {
+  display: flex;
+  justify-content: space-around;
+}
+.rating-card {
+  border: 1px solid black;
+  width: 10vw;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.rating-card img {
+  width: 30%;
+}
+
+section.about {
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.about-text {
+}
+.about-images {
+  display: flex;
+  flex-direction: row;
+}
+.about-images img {
+  width: 10vw;
+  margin: 5px;
+}
+
+section.footer {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+section.footer img {
+  width: 15vw;
+}
+footer nav ul {
+  list-style-type: none;
+}
+footer ul {
+  list-style-type: none;
+}
+button {
+  background-color: yellow;
+  border-radius: 5px;
 }
