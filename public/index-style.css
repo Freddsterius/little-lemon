@@ -9,8 +9,8 @@ header {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   /*display: grid;
   grid-template-columns: auto 1fr;*/
 }
@@ -32,21 +32,49 @@ header nav ul li a {
   color: red;
 }
 
+/**************HERO SECTION**************/
+
 section.hero {
   background-color: #32582c;
   display: flex;
   justify-content: space-between;
   align-items: top;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   height: 50vh;
+}
+.hero-text h1 {
+  color: #f4c314;
+  font-size: 4rem;
+  font-family: "markazi text";
+}
+.hero-text h2 {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-family: "markazi text";
+}
+.hero-text p {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: karla;
 }
 .hero img {
   width: 20vw;
-  height: 60vh;
+  height: 55vh;
   border-radius: 10px;
-  margin-top: 5px;
+  margin-top: 25px;
 }
+.hero button {
+  background-color: yellow;
+  border-radius: 16px;
+  padding: 8px;
+  margin-top: 20px;
+  font-family: karla;
+}
+
+/**************HIGHLIGHTS***************/
 
 section.specials {
   background-color: white;
@@ -55,8 +83,13 @@ section.specials {
 .title-and-button {
   display: flex;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.title-and-button h2 {
+  color: #000000;
+  font-family: karla;
+  font-size: 2rem;
 }
 .dish-cards {
   display: flex;
@@ -72,7 +105,7 @@ section.specials {
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 20vw;
-  height: 50vh;
+  height: 55vh;
   margin-bottom: 20px;
 }
 .dish-card img {
@@ -81,18 +114,61 @@ section.specials {
   object-fit: cover; /* Crop the image to fill the box */
   display: block;
 }
+.dish-card .card-name-price {
+  white-space: nowrap;
+  padding-left: 10px;
+}
+.dish-card .dish-name {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "markazi text";
+}
+.dish-card .price {
+  color: #ee9972;
+  font-family: "markazi text";
+}
+.dish-description {
+  color: black;
+  font-family: karla;
+  font-size: 1rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+.delivery-text {
+  font-family: karla;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.specials button {
+  background-color: yellow;
+  border-radius: 16px;
+  padding: 8px;
+  margin-top: 20px;
+  font-family: karla;
+}
 
+/***************TESTIMONIALS****************/
 section.testimonials {
-  background-color: aqua;
+  background-color: grey;
 }
 .testimonials-title {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 50px;
+  font-family: markazi;
+  font-size: 2rem;
 }
 .ratings {
   display: flex;
   justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .rating-card {
   border: 1px solid black;
@@ -100,39 +176,84 @@ section.testimonials {
   overflow: hidden;
   border-radius: 5px;
   margin-bottom: 50px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.photo-name {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .rating-card img {
   width: 30%;
+  border-radius: 10px;
 }
-
+/**************************ABOUT*******************/
 section.about {
-  background-color: brown;
+  background-color: rgb(77, 45, 45);
   display: flex;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: auto;
 }
-.about-text {
+
+.about-text h1 {
+  color: #f4c314;
+  font-size: 4rem;
+  font-family: "markazi text";
+}
+.about-text h2 {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-family: "markazi text";
+}
+.about-text p {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: karla;
 }
 .about-images {
-  display: flex;
-  flex-direction: row;
+  position: relative;
+  width: 300px; /* adjust to fit your layout */
+  height: 400px;
+  margin: auto;
 }
-.about-images img {
+.photo {
+  position: absolute;
   width: 10vw;
-  margin: 5px;
+  height: 35vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.top-img {
+  top: 2rem;
+  left: 20rem;
+  z-index: 2;
 }
 
+.bottom-img {
+  top: 7rem;
+  left: 15rem;
+  z-index: 1;
+}
+
+/*****************FOOTER*************/
 section.footer {
-  background-color: red;
+  background-color: rgb(185, 172, 172);
+  color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 30px;
   padding-bottom: 50px;
+  font-family: karla;
 }
 section.footer img {
   width: 15vw;
@@ -143,7 +264,6 @@ footer nav ul {
 footer ul {
   list-style-type: none;
 }
-button {
-  background-color: yellow;
-  border-radius: 5px;
+footer ul li a {
+  color: rgb(76, 0, 255);
 }
