@@ -1,22 +1,23 @@
-/*
 import React from "react";
-import About from "../about/About";
+
 import Hero from "../hero/Hero";
 import Highlights from "../highlights/Highlights";
 import Testimonials from "../testimonials/Testimonials";
+import About from "../about/About";
+
+import { Routes, Route } from "react-router-dom";
 
 const Main = () => {
   return (
     <main>
-      <h1 style={{ color: "red" }}>This is the main component</h1>
-      <Hero />
-      <Highlights />
-      <Testimonials />
-      <About />
-      <h1 style={{ color: "red" }}>This is the main component</h1>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/hightlights" element={<Highlights />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </main>
   );
 };
 
 export default Main;
-*/

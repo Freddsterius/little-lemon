@@ -11,8 +11,6 @@ header {
   justify-content: space-between;
   padding-left: 100px;
   padding-right: 100px;
-  /*display: grid;
-  grid-template-columns: auto 1fr;*/
 }
 .website-logo img {
   width: 30vw;
