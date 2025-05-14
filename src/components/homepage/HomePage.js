@@ -6,12 +6,12 @@ import About from "../about/About";
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <Hero />
       <Highlights />
       <Testimonials />
       <About />
-    </div>
+    </>
   );
 };
 
