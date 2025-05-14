@@ -231,13 +231,13 @@ section.about {
 }
 .top-img {
   top: 2rem;
-  left: 20rem;
+  left: 12rem;
   z-index: 2;
 }
 
 .bottom-img {
   top: 7rem;
-  left: 15rem;
+  left: 6rem;
   z-index: 1;
 }
 
