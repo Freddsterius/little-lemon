@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import footerLogo from "../../assets/images/logo.svg";
-import Hero from "../hero/Hero";
-import Highlights from "../highlights/Highlights";
-import Testimonials from "../testimonials/Testimonials";
-import About from "../about/About";
 
 const Footer = () => {
   return (
@@ -16,19 +12,20 @@ const Footer = () => {
         <div>
           <h3>Doormat Navigation</h3>
           <nav>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/hightlights">Highlights</Link>
-            </li>
-            <li>
-              {" "}
-              <Link to="/testimonials">Testimonials</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/hightlights">Highlights</Link>
+              </li>
+              <li>
+                <Link to="/testimonials">Testimonials</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+            </ul>
           </nav>
         </div>
         <div>

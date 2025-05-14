@@ -1,5 +1,8 @@
 import React from "react";
-import profilePhoto from "../../assets/images/wind-energy-7342177_1920.jpg";
+import profilePhoto from "../../assets/images/yellowbg.jpg";
+import profilePhotoi from "../../assets/images/gradientbg2.jpg";
+import profilePhotoii from "../../assets/images/gradientbg.jpg";
+import profilePhotoiii from "../../assets/images/bluebg.jpg";
 
 const Testimonials = () => {
   return (
@@ -9,7 +12,7 @@ const Testimonials = () => {
         <div class="rating-card">
           <p>Rating</p>
           <div class="photo-name">
-            <img src={profilePhoto} alt="profile photo here" />
+            <img src={profilePhoto} alt="user profile 1" />
             <p>Name</p>
           </div>
           <p>Review Text</p>
@@ -17,7 +20,7 @@ const Testimonials = () => {
         <div class="rating-card">
           <p>Rating</p>
           <div class="photo-name">
-            <img src={profilePhoto} alt="profile photo here" />
+            <img src={profilePhotoi} alt="user profile 2" />
             <p>Name</p>
           </div>
           <p>Review Text</p>
@@ -25,7 +28,7 @@ const Testimonials = () => {
         <div class="rating-card">
           <p>Rating</p>
           <div class="photo-name">
-            <img src={profilePhoto} alt="profile photo here" />
+            <img src={profilePhotoii} alt="user profile 3" />
             <p>Name</p>
           </div>
           <p>Review Text</p>
@@ -33,7 +36,7 @@ const Testimonials = () => {
         <div class="rating-card">
           <p>Rating</p>
           <div class="photo-name">
-            <img src={profilePhoto} alt="profile photo here" />
+            <img src={profilePhotoiii} alt="user profile 4" />
             <p>Name</p>
           </div>
           <p>Text</p>

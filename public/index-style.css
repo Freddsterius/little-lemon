@@ -39,7 +39,7 @@ section.hero {
   align-items: top;
   padding-left: 100px;
   padding-right: 100px;
-  height: 50vh;
+  height: 55vh;
 }
 .hero-text h1 {
   color: #f4c314;
@@ -249,14 +249,14 @@ section.footer {
   justify-content: space-between;
   padding-left: 100px;
   padding-right: 100px;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 50px;
   font-family: karla;
 }
 section.footer img {
   width: 15vw;
 }
-footer nav ul {
+footer nav ul li {
   list-style-type: none;
 }
 footer ul {

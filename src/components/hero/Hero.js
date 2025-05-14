@@ -19,7 +19,10 @@ const Hero = () => {
         <button>Reserve a Table</button>
       </div>
       <div class="hero-img">
-        <img src={heroImage} alt="herr photo here" />
+        <img
+          src={heroImage}
+          alt="a sample of some of litle lemon deliciuos food"
+        />
       </div>
     </section>
   );

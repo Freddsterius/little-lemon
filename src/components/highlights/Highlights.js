@@ -12,7 +12,7 @@ const Highlights = () => {
       </div>
       <div class="dish-cards">
         <div class="dish-card">
-          <img src={greekSalad} alt="dish photo here" />
+          <img src={greekSalad} alt="a delicious greek salad" />
           <p class="card-name-price">
             <span class="dish-name">Greek Salad </span>{" "}
             <span class="price">$12.99</span>
@@ -25,7 +25,7 @@ const Highlights = () => {
           <p class="delivery-text">Order a delivery 🚘</p>
         </div>
         <div class="dish-card">
-          <img src={bruchetta} alt="dish photo here" />
+          <img src={bruchetta} alt="a delicious bruschetta" />
           <p class="card-name-price">
             <span class="dish-name">Bruschetta</span>{" "}
             <span class="price">$5.99</span>
@@ -37,7 +37,7 @@ const Highlights = () => {
           <p class="delivery-text">Order a delivery 🚘</p>
         </div>
         <div class="dish-card">
-          <img src={lemeonDessert} alt="dish photo here" />
+          <img src={lemeonDessert} alt="a delicious lemon dessert" />
           <p class="card-name-price">
             <span class="dish-name">Lemon Dessert</span>{" "}
             <span class="price">$5.00</span>
