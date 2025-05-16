@@ -2,21 +2,28 @@ import React from "react";
 import BookingForm from "../bookingForm/BookingForm";
 import photo1 from "../../../assets/images/yellowbg.jpg";
 import photo2 from "../../../assets/images/bluebg.jpg";
+import "./bookingPage.css";
 
 const BookingPage = () => {
   return (
-    <div style={{ backgroundColor: "green", margin: "15px" }}>
-      <h2>Little Lemon</h2>
-      <h2>Chicago</h2>
-      <div className="any-occasion">
+    <div className="booking-page">
+      <section className="little-lemon">
+        <h1>Little Lemon</h1>
+        <h2>Chicago</h2>
+      </section>
+
+      <section className="any-occasion">
         <h3>Find a table for any occasion</h3>
-        <img src={photo1} alt="" width={100} />
-        <img src={photo2} alt="" width={100} />
-      </div>
+
+        <div className="any-occasion-images">
+          <img src={photo1} alt="" />
+          <img src={photo2} alt="" />
+        </div>
+      </section>
 
       <BookingForm />
 
-      <div className="seating-option">
+      <section className="seating-option">
         <h3>Seating option</h3>
         <label>
           Standard
@@ -26,7 +33,7 @@ const BookingPage = () => {
           Outside
           <input type="radio" id="outside" name="seating-preference" />
         </label>
-      </div>
+      </section>
     </div>
   );
 };

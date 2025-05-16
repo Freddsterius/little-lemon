@@ -3,6 +3,7 @@ import profilePhoto from "../../assets/images/yellowbg.jpg";
 import profilePhotoi from "../../assets/images/gradientbg2.jpg";
 import profilePhotoii from "../../assets/images/gradientbg.jpg";
 import profilePhotoiii from "../../assets/images/bluebg.jpg";
+import "./testimonials.css";
 
 const Testimonials = () => {
   return (

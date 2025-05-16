@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+section.footer {
+  background-color: rgb(185, 172, 172);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: karla;
+}
+section.footer img {
+  width: 15vw;
+}
+footer nav ul li {
+  list-style-type: none;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li a {
+  color: rgb(76, 0, 255);
+}

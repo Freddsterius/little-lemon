@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+section.testimonials {
+  background-color: grey;
+}
+.testimonials-title {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-family: markazi;
+  font-size: 2rem;
+}
+.ratings {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.rating-card {
+  border: 1px solid black;
+  width: 10vw;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.photo-name {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.rating-card img {
+  width: 30%;
+  border-radius: 10px;
+}

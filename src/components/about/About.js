@@ -1,6 +1,7 @@
 import React from "react";
 import imgBottom from "../../assets/images/greek salad.jpg";
 import imgTop from "../../assets/images/restauranfood.jpg";
+import "./about.css";
 
 const About = () => {
   return (

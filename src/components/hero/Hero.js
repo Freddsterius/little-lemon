@@ -1,6 +1,6 @@
 import React from "react";
 import heroImage from "../../assets/images/restauranfood.jpg";
-import BookingForm from "../booking/bookingPage/BookingPage";
+import "./hero.css";
 
 const Hero = () => {
   return (

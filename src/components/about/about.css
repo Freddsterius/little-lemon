@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+section.about {
+  background-color: rgb(85, 73, 73);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: auto;
+}
+
+.about-text h1 {
+  color: #f4c314;
+  font-size: 4rem;
+  font-family: "markazi text";
+}
+.about-text h2 {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-family: "markazi text";
+}
+.about-text p {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: karla;
+}
+.about-images {
+  position: relative;
+  width: 300px; /* adjust to fit your layout */
+  height: 400px;
+  margin: auto;
+}
+.photo {
+  position: absolute;
+  width: 10vw;
+  height: 35vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.top-img {
+  top: 2rem;
+  left: 12rem;
+  z-index: 2;
+}
+
+.bottom-img {
+  top: 7rem;
+  left: 6rem;
+  z-index: 1;
+}

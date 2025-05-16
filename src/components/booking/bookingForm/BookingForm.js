@@ -1,4 +1,5 @@
 import React from "react";
+import "./bookingForm.css";
 
 const BookingForm = () => {
   return (
@@ -12,11 +13,11 @@ const BookingForm = () => {
         marginRight: "auto",
       }}
     >
-      <label HTMLfor="res-date">Choose date</label>
+      <label htmlFor="res-date">Choose date</label>
       <input type="date" id="res-date" />
 
-      <label for="res-time">Choose time</label>
-      <select id="res-time ">
+      <label htmlFor="res-time">Choose time</label>
+      <select id="res-time">
         <option>17:00</option>
         <option>18:00</option>
         <option>19:00</option>
@@ -25,10 +26,10 @@ const BookingForm = () => {
         <option>22:00</option>
       </select>
 
-      <label HTMLfor="guests">Number of guests</label>
+      <label htmlFor="guests">Number of guests</label>
       <input type="number" placeholder="1" min="1" max="10" id="guests" />
 
-      <label HTMLfor="occasion">Occasion</label>
+      <label htmlFor="occasion">Occasion</label>
       <select id="occasion">
         <option>Birthday</option>
         <option>Engagement</option>

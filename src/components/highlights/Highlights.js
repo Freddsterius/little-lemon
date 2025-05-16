@@ -2,6 +2,7 @@ import React from "react";
 import greekSalad from "../../assets/images/greek salad.jpg";
 import bruchetta from "../../assets/images/bruchetta.svg";
 import lemeonDessert from "../../assets/images/lemon dessert.jpg";
+import "./highlights.css";
 
 const Highlights = () => {
   return (

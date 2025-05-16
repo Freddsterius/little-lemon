@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+section.specials {
+  background-color: white;
+  padding-top: 50px;
+}
+.title-and-button {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.title-and-button h2 {
+  color: #000000;
+  font-family: karla;
+  font-size: 2rem;
+}
+.dish-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.dish-card {
+  border: 1px solid black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 20vw;
+  height: 62vh;
+  margin-bottom: 20px;
+}
+.dish-card img {
+  width: 100%; /* Make image take full width */
+  height: 25vh; /* Set a fixed height */
+  object-fit: cover; /* Crop the image to fill the box */
+  display: block;
+}
+.dish-card .card-name-price {
+  white-space: nowrap;
+  padding-left: 10px;
+}
+.dish-card .dish-name {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "markazi text";
+}
+.dish-card .price {
+  color: #ee9972;
+  font-family: "markazi text";
+}
+.dish-description {
+  color: black;
+  font-family: karla;
+  font-size: 1rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+.delivery-text {
+  font-family: karla;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.specials button {
+  background-color: yellow;
+  border-radius: 16px;
+  padding: 8px;
+  margin-top: 20px;
+  font-family: karla;
+}
