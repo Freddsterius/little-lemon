@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   align-self: flex-start;
   padding-left: 100px;
+  padding-top: 15px;
   font-family: karla;
 }
 .little-lemon h1 {
@@ -31,32 +32,66 @@ body {
   font-size: 1.5rem;
 }
 .any-occasion h3 {
-  display: flex;
-  justify-content: flex-start;
   align-self: flex-start;
   padding-left: 100px;
+  padding-top: 30px;
   font-family: karla;
+  color: white;
 }
 
-.any-occasion-images img {
+.any-occasion-images {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-self: flex-start;
+  flex-direction: row;
   padding-left: 100px;
-  font-family: karla;
-  width: 200px;
+  padding-right: 100px;
+  padding-block: 20px;
+}
+.any-occasion-images img {
+  width: 25vw;
+  margin-inline: 10px;
+  text-align: center;
 }
 
 .seating-option {
+  padding-block: 30px;
+}
+.seating-option h3 {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
   align-self: flex-start;
   padding-left: 100px;
+  font-family: karla;
+  color: white;
 }
 
-.seating-option label {
+.standard-container {
   display: flex;
-  align-self: flex-start;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-block: 10px;
+  font-family: karla;
+  color: white;
+}
+.outside-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: karla;
+  color: white;
+}
+div.letsgo-btn-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+button#letsgo-btn {
+  color: black;
+  background-color: #f4ce14;
+  padding: 8px;
+  border-radius: 15px;
+  width: 20vw;
+  font-family: karla;
+  font-weight: bold;
 }

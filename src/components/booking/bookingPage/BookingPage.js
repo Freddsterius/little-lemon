@@ -1,7 +1,7 @@
 import React from "react";
 import BookingForm from "../bookingForm/BookingForm";
-import photo1 from "../../../assets/images/yellowbg.jpg";
-import photo2 from "../../../assets/images/bluebg.jpg";
+import photo1 from "../../../assets/images/restaurant chef B.jpg";
+import photo2 from "../../../assets/images/restaurant.jpg";
 import "./bookingPage.css";
 
 const BookingPage = () => {
@@ -11,7 +11,6 @@ const BookingPage = () => {
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
       </section>
-
       <section className="any-occasion">
         <h3>Find a table for any occasion</h3>
 
@@ -20,20 +19,22 @@ const BookingPage = () => {
           <img src={photo2} alt="" />
         </div>
       </section>
-
       <BookingForm />
-
       <section className="seating-option">
-        <h3>Seating option</h3>
-        <label>
-          Standard
+        <h3>Seating options</h3>
+        <div className="standard-container">
+          <label>Standard</label>
           <input type="radio" id="standard" name="seating-preference" />
-        </label>
-        <label>
-          Outside
+        </div>
+
+        <div className="outside-container">
+          <label>Outside</label>
           <input type="radio" id="outside" name="seating-preference" />
-        </label>
+        </div>
       </section>
+      <div className="letsgo-btn-container">
+        <button id="letsgo-btn">Lets go➡</button>
+      </div>
     </div>
   );
 };
