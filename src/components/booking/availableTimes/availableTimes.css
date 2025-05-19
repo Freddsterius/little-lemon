@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+}
+.available-times label {
+  color: rgb(255, 255, 255);
+  font-family: karla;
+}
+select {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  width: 50vw;
+}

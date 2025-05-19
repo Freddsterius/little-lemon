@@ -18,7 +18,8 @@ form label {
   color: white;
   font-family: karla;
 }
-form input {
+form input,
+select {
   padding: 10px;
   border-radius: 8px;
   width: 50vw;
