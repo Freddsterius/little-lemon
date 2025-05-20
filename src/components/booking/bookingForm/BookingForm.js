@@ -3,20 +3,32 @@ import "./bookingForm.css";
 import AvailableTimes from "../availableTimes/AvailableTimes";
 
 const BookingForm = () => {
+  /*Reservation Date State*/
   const [resDate, setResDate] = useState("");
   const handleResDateChange = (e) => {
     setResDate(e.target.value);
   };
-  const [numberOfGuests, setNumberOfGuests] = useState("1");
-  const handleChange2 = (e) => {
+  /*Reservation Time State*/
+  const [resTime, setResTime] = useState("17:00");
+  const handleResTimeChange = (e) => {
+    setResTime(e.target.value); // This will be a string
+  };
+  /*Number of Guests State*/
+  const [numberOfGuests, setNumberOfGuests] = useState(1);
+  const handleNumberOfGuestsChange = (e) => {
     setNumberOfGuests(Number(e.target.value)); // value is a number
   };
+  /*Occasion State*/
   const [occasion, setOccasion] = useState("Birthday");
   const handleOccasionChange = (e) => {
     setOccasion(e.target.value);
   };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({ resDate, resTime, numberOfGuests, occasion });
+  };
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <label htmlFor="res-date">Choose date</label>
       <input
         type="date"
@@ -29,7 +41,11 @@ const BookingForm = () => {
         Your selected date is:{" "}
         <span style={{ color: "white" }}>{resDate || "None"}</span>
       </h5>
-      <AvailableTimes />
+      <AvailableTimes
+        resTime={resTime}
+        setResTime={setResTime}
+        handleResTimeChange={handleResTimeChange}
+      />
       <label htmlFor="guests">Number of guests</label>
       <input
         type="number"
@@ -38,7 +54,7 @@ const BookingForm = () => {
         max="10"
         id="guests"
         value={numberOfGuests}
-        onChange={handleChange2}
+        onChange={handleNumberOfGuestsChange}
         required
       />
       <h5>
@@ -61,7 +77,6 @@ const BookingForm = () => {
         Your selected occasion is:{" "}
         <span style={{ color: "white" }}>{occasion}</span>
       </h5>
-      <button type="submit">Make Your reservation</button>
     </form>
   );
 };
