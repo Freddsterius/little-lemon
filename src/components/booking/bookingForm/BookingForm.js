@@ -43,7 +43,6 @@ const BookingForm = () => {
       </h5>
       <AvailableTimes
         resTime={resTime}
-        setResTime={setResTime}
         handleResTimeChange={handleResTimeChange}
       />
       <label htmlFor="guests">Number of guests</label>
