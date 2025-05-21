@@ -2,17 +2,20 @@ import React, { useState } from "react";
 import "./bookingForm.css";
 import AvailableTimes from "../availableTimes/AvailableTimes";
 
-const BookingForm = () => {
+const BookingForm = ({
+  availableTimes,
+  selectedTime,
+  handleResTimeChange,
+  dispatch,
+}) => {
   /*Reservation Date State*/
   const [resDate, setResDate] = useState("");
   const handleResDateChange = (e) => {
-    setResDate(e.target.value);
+    const date = e.target.value;
+    setResDate(date);
+    dispatch({ type: "UPDATE_TIMES", payload: date }); // lift the logic here
   };
-  /*Reservation Time State*/
-  const [resTime, setResTime] = useState("17:00");
-  const handleResTimeChange = (e) => {
-    setResTime(e.target.value); // This will be a string
-  };
+
   /*Number of Guests State*/
   const [numberOfGuests, setNumberOfGuests] = useState(1);
   const handleNumberOfGuestsChange = (e) => {
@@ -25,7 +28,6 @@ const BookingForm = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ resDate, resTime, numberOfGuests, occasion });
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -42,8 +44,10 @@ const BookingForm = () => {
         <span style={{ color: "white" }}>{resDate || "None"}</span>
       </h5>
       <AvailableTimes
-        resTime={resTime}
+        availableTimes={availableTimes}
+        selectedTime={selectedTime}
         handleResTimeChange={handleResTimeChange}
+        dispatch={dispatch}
       />
       <label htmlFor="guests">Number of guests</label>
       <input

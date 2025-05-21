@@ -4,7 +4,12 @@ import photo1 from "../../../assets/images/restaurant chef B.jpg";
 import photo2 from "../../../assets/images/restaurant.jpg";
 import "./bookingPage.css";
 
-const BookingPage = () => {
+const BookingPage = ({
+  availableTimes,
+  selectedTime,
+  handleResTimeChange,
+  dispatch,
+}) => {
   return (
     <div className="booking-page">
       <section className="little-lemon">
@@ -19,7 +24,12 @@ const BookingPage = () => {
           <img src={photo2} alt="" />
         </div>
       </section>
-      <BookingForm />
+      <BookingForm
+        availableTimes={availableTimes}
+        selectedTime={selectedTime}
+        handleResTimeChange={handleResTimeChange}
+        dispatch={dispatch}
+      />
       <section className="seating-option">
         <h3>Seating options</h3>
         <div className="standard-container">
