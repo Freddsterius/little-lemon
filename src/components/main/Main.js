@@ -8,7 +8,6 @@ import Highlights from "../highlights/Highlights";
 import Testimonials from "../testimonials/Testimonials";
 import About from "../about/About";
 
-// Move these two functions here, above where they're used
 const initializeTimes = () => {
   return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 };
@@ -30,13 +29,6 @@ const Main = () => {
     initializeTimes
   );
 
-  // Reservation time state (optional if you manage all time selection through dispatch)
-  const [selectedTime, setSelectedTime] = useState("17:00");
-
-  const handleResTimeChange = (e) => {
-    setSelectedTime(e.target.value);
-  };
-
   return (
     <main>
       <Routes>
@@ -44,12 +36,7 @@ const Main = () => {
         <Route
           path="/booking"
           element={
-            <BookingPage
-              availableTimes={availableTimes}
-              selectedTime={selectedTime}
-              handleResTimeChange={handleResTimeChange}
-              dispatch={dispatch}
-            />
+            <BookingPage availableTimes={availableTimes} dispatch={dispatch} />
           }
         />
         <Route path="/hero" element={<Hero />} />

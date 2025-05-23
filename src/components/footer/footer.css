@@ -7,7 +7,7 @@ body {
   width: 100%;
 }
 section.footer {
-  background-color: rgb(185, 172, 172);
+  background-color: rgb(14, 13, 13);
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
@@ -19,6 +19,9 @@ section.footer {
 }
 section.footer img {
   width: 15vw;
+}
+section.footer h3 {
+  color: white;
 }
 footer nav ul li {
   list-style-type: none;

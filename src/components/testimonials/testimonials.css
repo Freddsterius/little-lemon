@@ -7,7 +7,7 @@ body {
   width: 100%;
 }
 section.testimonials {
-  background-color: grey;
+  background-color: rgb(199, 197, 197);
 }
 .testimonials-title {
   text-align: center;

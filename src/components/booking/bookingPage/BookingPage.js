@@ -24,12 +24,7 @@ const BookingPage = ({
           <img src={photo2} alt="" />
         </div>
       </section>
-      <BookingForm
-        availableTimes={availableTimes}
-        selectedTime={selectedTime}
-        handleResTimeChange={handleResTimeChange}
-        dispatch={dispatch}
-      />
+      <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
       <section className="seating-option">
         <h3>Seating options</h3>
         <div className="standard-container">

@@ -6,10 +6,11 @@ const Nav = () => {
   return (
     <nav>
       <Link to="/">Home</Link>
-      <Link to="/booking">Booking Page</Link>
-      <ul>
-        <li style={{ color: "red" }}>Edit the navbar</li>
-      </ul>
+
+      <Link to="/highlights">Highlights</Link>
+      <Link to="/testimonials">Testimonials</Link>
+      <Link to="/about">About</Link>
+      <Link to="/booking">Reservations</Link>
     </nav>
   );
 };

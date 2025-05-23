@@ -31,6 +31,7 @@ const BookingForm = ({
   };
   return (
     <form onSubmit={handleSubmit}>
+      <h2>Booking Form</h2>
       <label htmlFor="res-date">Choose date</label>
       <input
         type="date"
@@ -43,12 +44,7 @@ const BookingForm = ({
         Your selected date is:{" "}
         <span style={{ color: "white" }}>{resDate || "None"}</span>
       </h5>
-      <AvailableTimes
-        availableTimes={availableTimes}
-        selectedTime={selectedTime}
-        handleResTimeChange={handleResTimeChange}
-        dispatch={dispatch}
-      />
+      <AvailableTimes availableTimes={availableTimes} dispatch={dispatch} />
       <label htmlFor="guests">Number of guests</label>
       <input
         type="number"

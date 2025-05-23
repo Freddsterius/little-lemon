@@ -7,7 +7,7 @@ body {
   width: 100%;
 }
 section.about {
-  background-color: rgb(85, 73, 73);
+  background-color: rgb(182, 168, 168);
   display: flex;
   justify-content: space-between;
   padding-left: 100px;
