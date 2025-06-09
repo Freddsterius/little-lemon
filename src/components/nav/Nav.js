@@ -4,13 +4,22 @@ import "./nav.css";
 
 const Nav = () => {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-
-      <Link to="/highlights">Highlights</Link>
-      <Link to="/testimonials">Testimonials</Link>
-      <Link to="/about">About</Link>
-      <Link to="/booking">Reservations</Link>
+    <nav className="navbar">
+      <Link to="/" className="navbar-link">
+        Home
+      </Link>
+      <Link to="/highlights" className="navbar-link">
+        Highlights
+      </Link>
+      <Link to="/testimonials" className="navbar-link">
+        Testimonials
+      </Link>
+      <Link to="/about" className="navbar-link">
+        About
+      </Link>
+      <Link to="/booking" className="navbar-link">
+        Reservations
+      </Link>
     </nav>
   );
 };
