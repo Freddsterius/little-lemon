@@ -1,25 +1,50 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./nav.css";
 
 const Nav = () => {
   return (
     <nav className="navbar">
-      <Link to="/" className="navbar-link">
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive ? "navbar-link active" : "navbar-link"
+        }
+      >
         Home
-      </Link>
-      <Link to="/highlights" className="navbar-link">
+      </NavLink>
+      <NavLink
+        to="/highlights"
+        className={({ isActive }) =>
+          isActive ? "navbar-link active" : "navbar-link"
+        }
+      >
         Highlights
-      </Link>
-      <Link to="/testimonials" className="navbar-link">
+      </NavLink>
+      <NavLink
+        to="/testimonials"
+        className={({ isActive }) =>
+          isActive ? "navbar-link active" : "navbar-link"
+        }
+      >
         Testimonials
-      </Link>
-      <Link to="/about" className="navbar-link">
+      </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          isActive ? "navbar-link active" : "navbar-link"
+        }
+      >
         About
-      </Link>
-      <Link to="/booking" className="navbar-link">
+      </NavLink>
+      <NavLink
+        to="/booking"
+        className={({ isActive }) =>
+          isActive ? "navbar-link active" : "navbar-link"
+        }
+      >
         Reservations
-      </Link>
+      </NavLink>
     </nav>
   );
 };
