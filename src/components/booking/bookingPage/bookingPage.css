@@ -51,6 +51,7 @@ body {
   width: 25vw;
   margin-inline: 10px;
   text-align: center;
+  border-radius: 7px;
 }
 
 .seating-option {
