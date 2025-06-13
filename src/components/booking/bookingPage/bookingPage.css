@@ -8,7 +8,7 @@ body {
 }
 .booking-page {
   background-color: rgb(52, 97, 38);
-  margin: 15px;
+  margin: auto;
 }
 .little-lemon {
   display: flex;
@@ -43,56 +43,17 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin: auto;
+  /*
   padding-left: 100px;
   padding-right: 100px;
   padding-block: 20px;
+*/
+  padding: 30px 200px;
 }
 .any-occasion-images img {
   width: 25vw;
   margin-inline: 10px;
   text-align: center;
   border-radius: 7px;
-}
-
-.seating-option {
-  padding-block: 30px;
-}
-.seating-option h3 {
-  display: flex;
-  align-self: flex-start;
-  padding-left: 100px;
-  font-family: karla;
-  color: white;
-}
-
-.standard-container {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-block: 10px;
-  font-family: karla;
-  color: white;
-}
-.outside-container {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
-  font-family: karla;
-  color: white;
-}
-div.letsgo-btn-container {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-}
-button#letsgo-btn {
-  color: black;
-  background-color: #f4ce14;
-  padding: 8px;
-  border-radius: 15px;
-  width: 20vw;
-  font-family: karla;
-  font-weight: bold;
 }

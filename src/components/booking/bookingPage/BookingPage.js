@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BookingForm from "../bookingForm/BookingForm";
 import photo1 from "../../../assets/images/restaurant chef B.jpg";
 import photo2 from "../../../assets/images/restaurant.jpg";
@@ -19,22 +19,8 @@ const BookingPage = ({ availableTimes = { availableTimes }, dispatch }) => {
           <img src={photo2} alt="" />
         </div>
       </section>
-      <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
-      <section className="seating-option">
-        <h3>Seating options</h3>
-        <div className="standard-container">
-          <label>Standard</label>
-          <input type="radio" id="standard" name="seating-preference" />
-        </div>
 
-        <div className="outside-container">
-          <label>Outside</label>
-          <input type="radio" id="outside" name="seating-preference" />
-        </div>
-      </section>
-      <div className="letsgo-btn-container">
-        <button id="letsgo-btn">Lets go➡</button>
-      </div>
+      <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
     </div>
   );
 };

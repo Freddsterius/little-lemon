@@ -58,6 +58,13 @@ const BookingForm = ({ availableTimes, dispatch }) => {
     setOccasion(e.target.value);
   };
 
+  /*Seating Options state */
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const handleChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     //console.log("All the forms data");
@@ -110,6 +117,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
         You'll be having{" "}
         <span style={{ color: "white" }}>{numberOfGuests}</span> guests.
       </h5>
+
       <label htmlFor="occasion">Occasion:</label>
       <select
         id="occasion"
@@ -125,6 +133,41 @@ const BookingForm = ({ availableTimes, dispatch }) => {
         Your selected occasion is:{" "}
         <span style={{ color: "white" }}>{occasion}</span>
       </h5>
+
+      <label>Seating options</label>
+
+      <section className="radio-option">
+        <label htmlFor="standard">Standard</label>
+        <input
+          type="radio"
+          id="standard"
+          name="seating-preference"
+          value="Standard"
+          checked={selectedOption === "Standard"}
+          onChange={handleChange}
+        />
+      </section>
+
+      <section className="radio-option">
+        <label htmlFor="outside">Outside</label>
+        <input
+          type="radio"
+          id="outside"
+          name="seating-preference"
+          value="Outside"
+          checked={selectedOption === "Outside"}
+          onChange={handleChange}
+        />
+      </section>
+
+      <h5>
+        Your selected seating preference is:{" "}
+        <span style={{ color: "white" }}>{selectedOption}</span>
+      </h5>
+
+      <div className="letsgo-btn-container">
+        <button id="letsgo-btn">Lets go➡</button>
+      </div>
     </form>
   );
 };
