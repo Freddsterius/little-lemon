@@ -92,12 +92,14 @@ const BookingForm = ({ availableTimes, dispatch }) => {
         onChange={handleResTimeChange}
         required
       >
-        {availableTimes.map((time, index) => (
-          <option id={index} value={time}>
-            {time}
-          </option>
-        ))}
+        {Array.isArray(availableTimes) &&
+          availableTimes.map((time, index) => (
+            <option key={index} value={time}>
+              {time}
+            </option>
+          ))}
       </select>
+
       <h5>
         Your selected time is:{" "}
         <span style={{ color: "white" }}>{selectedTime}</span>{" "}
@@ -173,3 +175,75 @@ const BookingForm = ({ availableTimes, dispatch }) => {
 };
 
 export default BookingForm;
+
+/*
+// BookingForm.js
+import React, { useState } from 'react';
+
+function BookingForm({ selectedDate, onDateChange, availableTimes }) {
+  // Local state for the rest of the form fields
+  const [time, setTime] = useState('');
+  const [guests, setGuests] = useState(1);
+  const [occasion, setOccasion] = useState('Birthday');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form submitted:', { date: selectedDate, time, guests, occasion });
+    // ...additional submission logic...
+  };
+
+  // Call the handler from Main on date change
+  const handleDateInput = (e) => {
+    onDateChange(e.target.value);
+  };
+
+  return (
+    <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }} onSubmit={handleSubmit}>
+      <label htmlFor="res-date">Choose date</label>
+      <input
+        type="date"
+        id="res-date"
+        value={selectedDate}
+        onChange={handleDateInput}
+      />
+
+      <label htmlFor="res-time">Choose time</label>
+      <select
+        id="res-time"
+        value={time}
+        onChange={(e) => setTime(e.target.value)}
+      >
+        {availableTimes.map((t) => (
+          <option key={t} value={t}>{t}</option>
+        ))}
+      </select>
+
+      <label htmlFor="guests">Number of guests</label>
+      <input
+        type="number"
+        placeholder="1"
+        min="1"
+        max="10"
+        id="guests"
+        value={guests}
+        onChange={(e) => setGuests(e.target.value)}
+      />
+
+      <label htmlFor="occasion">Occasion</label>
+      <select
+        id="occasion"
+        value={occasion}
+        onChange={(e) => setOccasion(e.target.value)}
+      >
+        <option value="Birthday">Birthday</option>
+        <option value="Anniversary">Anniversary</option>
+      </select>
+
+      <input type="submit" value="Make Your reservation" />
+    </form>
+  );
+}
+
+export default BookingForm;
+
+*/
