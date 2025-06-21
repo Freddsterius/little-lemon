@@ -7,8 +7,9 @@ body {
   width: 100%;
 }
 .booking-page {
-  background-color: rgb(52, 97, 38);
-  margin: auto;
+  background-color: #014701;
+  /*margin: auto;*/
+  margin: 0 1rem 0.5rem 1rem;
 }
 .little-lemon {
   display: flex;

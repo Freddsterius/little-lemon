@@ -47,22 +47,16 @@ const BookingForm = ({ availableTimes, dispatch }) => {
   */
   /*************************************************** */
 
-  /*Number of Guests State*/
-  const [numberOfGuests, setNumberOfGuests] = useState(1);
-  const handleNumberOfGuestsChange = (e) => {
-    setNumberOfGuests(Number(e.target.value));
-  };
-  /*Occasion State*/
-  const [occasion, setOccasion] = useState("Birthday");
-  const handleOccasionChange = (e) => {
-    setOccasion(e.target.value);
-  };
-
-  /*Seating Options state */
-  const [selectedOption, setSelectedOption] = useState("");
+  /*  form state handled by one useState*/
+  const [formData, setFormData] = useState({
+    numberOfGuests: 1,
+    occasion: "Birthday",
+    seatingPreference: "",
+  });
 
   const handleChange = (event) => {
-    setSelectedOption(event.target.value);
+    const { name, value } = event.target;
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
   const handleSubmit = (e) => {
@@ -108,23 +102,26 @@ const BookingForm = ({ availableTimes, dispatch }) => {
       <label htmlFor="guests">Number of guests:</label>
       <input
         type="number"
+        name="numberOfGuests"
         min="1"
         max="10"
         id="guests"
-        value={numberOfGuests}
-        onChange={handleNumberOfGuestsChange}
+        value={formData.numberOfGuests}
+        onChange={handleChange}
         required
       />
       <h5>
         You'll be having{" "}
-        <span style={{ color: "white" }}>{numberOfGuests}</span> guests.
+        <span style={{ color: "white" }}>{formData.numberOfGuests}</span>{" "}
+        guests.
       </h5>
 
       <label htmlFor="occasion">Occasion:</label>
       <select
         id="occasion"
-        value={occasion}
-        onChange={handleOccasionChange}
+        name="occasion"
+        value={formData.occasion}
+        onChange={handleChange}
         required
       >
         <option value="Birthday">Birthday</option>
@@ -133,7 +130,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
       </select>
       <h5>
         Your selected occasion is:{" "}
-        <span style={{ color: "white" }}>{occasion}</span>
+        <span style={{ color: "white" }}>{formData.occasion}</span>
       </h5>
 
       <label>Seating options</label>
@@ -143,9 +140,9 @@ const BookingForm = ({ availableTimes, dispatch }) => {
         <input
           type="radio"
           id="standard"
-          name="seating-preference"
+          name="seatingPreference"
           value="Standard"
-          checked={selectedOption === "Standard"}
+          checked={formData.seatingPreference === "Standard"}
           onChange={handleChange}
         />
       </section>
@@ -155,20 +152,20 @@ const BookingForm = ({ availableTimes, dispatch }) => {
         <input
           type="radio"
           id="outside"
-          name="seating-preference"
+          name="seatingPreference"
           value="Outside"
-          checked={selectedOption === "Outside"}
+          checked={formData.seatingPreference === "Outside"}
           onChange={handleChange}
         />
       </section>
 
       <h5>
         Your selected seating preference is:{" "}
-        <span style={{ color: "white" }}>{selectedOption}</span>
+        <span style={{ color: "white" }}>{formData.seatingPreference}</span>
       </h5>
 
       <div className="letsgo-btn-container">
-        <button id="letsgo-btn">Lets go➡</button>
+        <button id="letsgo-btn">Lets go</button>
       </div>
     </form>
   );

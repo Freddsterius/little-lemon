@@ -75,3 +75,10 @@ div.letsgo-btn-container {
   font-family: karla;
   font-weight: bold;
 }
+#letsgo-btn:hover {
+  cursor: pointer;
+  background-color: #ffd500;
+  font-weight: 900;
+  text-decoration: underline;
+  font-size: 1rem;
+}

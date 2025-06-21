@@ -4,8 +4,8 @@ import "./hero.css";
 
 const Hero = () => {
   return (
-    <section class="hero">
-      <div class="hero-text">
+    <section className="hero">
+      <div className="hero-text">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>
@@ -19,7 +19,7 @@ const Hero = () => {
         </p>
         <button>Reserve a Table</button>
       </div>
-      <div class="hero-img">
+      <div className="hero-img">
         <img
           src={heroImage}
           alt="a sample of some of litle lemon deliciuos food"

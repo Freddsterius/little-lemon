@@ -6,7 +6,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer>
-      <section class="footer">
+      <section className="footer">
         <div>
           <img src={footerLogo} alt="little lemon logo" />
         </div>
@@ -32,6 +32,7 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
+
         <div>
           <h3>Contact</h3>
           <ul>
@@ -46,6 +47,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+
         <div>
           <h3>Social Media Links</h3>
           <ul>

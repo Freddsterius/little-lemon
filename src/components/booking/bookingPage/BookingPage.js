@@ -4,13 +4,17 @@ import photo1 from "../../../assets/images/restaurant chef B.jpg";
 import photo2 from "../../../assets/images/restaurant.jpg";
 import "./bookingPage.css";
 
-const BookingPage = ({ availableTimes = { availableTimes }, dispatch }) => {
+const BookingPage = ({
+  availableTimes = { availableTimes },
+  dispatch = { dispatch },
+}) => {
   return (
     <div className="booking-page">
       <section className="little-lemon">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
       </section>
+
       <section className="any-occasion">
         <h3>Find a table for any occasion</h3>
 
@@ -20,7 +24,9 @@ const BookingPage = ({ availableTimes = { availableTimes }, dispatch }) => {
         </div>
       </section>
 
-      <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+      <section>
+        <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+      </section>
     </div>
   );
 };
