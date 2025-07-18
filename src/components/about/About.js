@@ -1,38 +1,31 @@
 import React from "react";
-import imgBottom from "../../assets/images/greek salad.jpg";
-import imgTop from "../../assets/images/restauranfood.jpg";
+import imgBottom from "../../assets/about/Mario-and-Adrian-A.webp";
+import imgTop from "../../assets/about/Mario-and-Adrian-B.webp";
 import "./about.css";
 
 const About = () => {
   return (
-    <section class="about">
-      <div class="about-text">
+    <section className="about-container">
+      <div className="about-text-container">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>
-          jfhff dfdf ffr rer rererfdg dvdgrcv
-          <br />
-          gegeg erg ege gergege gg e gegeggerg ergegg
-          <br />
-          eg ergerg rgrgvge grg fdgf g gfgg <br />
-          rg gerhedg ergtrsgefggrfgf
-          <br />
-          dgnbj jhjhrfh sjybsakuhj ash da
-          <br />
-          dnbgdn hd dhkd dgagnak dagjgudg dakjasdkj rg gerhedg ergtrsgefggrfgf
-          <br />
-          dgnbj jhjhrfh sjybsakuhj ash da
-          <br />
-          dnbgdn hd dhkd dgagnak dagjgudg dakjasdkj rg gerhedg ergtrsgefggrfgf
-          <br />
-          dgnbj jhjhrfh sjybsakuhj ash da
-          <br />
-          dnbgdn hd dhkd dgagnak dagjgudg dakjasdkj
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quae cum
+          aliquid nemo, assumenda sapiente nobis ratione consequuntur corrupti,
+          nostrum dolores dolore laboriosam praesentium fugiat reiciendis dicta
+          adipisci obcaecati eveniet, quis qui vel ea vero! Culpa dolores earum
+          asperiores, officiis sed consectetur, ducimus minima, consequatur
+          blanditiis fugiat voluptas mollitia excepturi!
         </p>
       </div>
-      <div class="about-images">
-        <img src={imgTop} class="photo bottom-img" alt="little lemon logo" />
-        <img src={imgBottom} class="photo top-img" alt="little lemon logo" />
+
+      <div className="about-images-container">
+        <img src={imgTop} className="photo left-img" alt="little lemon logo" />
+        <img
+          src={imgBottom}
+          className="photo right-img"
+          alt="little lemon logo"
+        />
       </div>
     </section>
   );

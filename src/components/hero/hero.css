@@ -5,43 +5,182 @@
 }
 body {
   width: 100%;
+  font-size: 16px;
 }
-section.hero {
+img {
+  display: block; /* removes the white space beneath images*/
+}
+
+h1,
+h2 {
+  font-family: "markazi text", Arial;
+}
+p,
+button {
+  font-family: karla, "Times New Roman";
+}
+
+.hero-container {
   background-color: #32582c;
   display: flex;
   justify-content: space-between;
-  align-items: top;
-  padding-left: 100px;
-  padding-right: 100px;
-  height: 55vh;
+  align-items: center;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    padding-inline: 20px;
+    height: 260px;
+    margin-bottom: 70px;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+    padding-inline: 50px;
+    margin-bottom: 30px;
+  }
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+    padding-inline: 90px;
+    height: 480px;
+    margin-bottom: 30px;
+  }
 }
-.hero-text h1 {
+.hero-text-container {
+  width: 60%;
+}
+.hero-text-container h1 {
   color: #f4c314;
-  font-size: 4rem;
-  font-family: "markazi text";
+  white-space: nowrap;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    font-size: 1.7rem;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+    font-size: 3rem;
+  }
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+    font-size: 4rem;
+  }
 }
-.hero-text h2 {
+.hero-text-container h2 {
   color: #ffffff;
-  font-size: 2.4rem;
-  font-family: "markazi text";
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    font-size: 1.3rem;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+    font-size: 2.2rem;
+  }
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+    font-size: 2.4rem;
+  }
 }
-.hero-text p {
-  margin-bottom: 10px;
-  margin-top: 15px;
+.hero-text-container p {
+  margin-block: 10px;
   color: #ffffff;
-  font-size: 1rem;
-  font-family: karla;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
+    margin-block: 7px;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+    font-size: 1.1rem;
+  }
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+    font-size: 1.3rem;
+  }
 }
-.hero img {
-  width: 20vw;
-  height: 55vh;
-  border-radius: 10px;
-  margin-top: 25px;
-}
-.hero button {
+.hero-container button {
   background-color: yellow;
-  border-radius: 16px;
-  padding: 8px;
-  margin-top: 20px;
-  font-family: karla;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+  font-weight: bold;
+  border: 1px solid black;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
+    border-radius: 8px;
+    padding: 2px 4px;
+    margin-top: 20px;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+    font-size: 1.2rem;
+    padding: 3px 5px;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+    font-size: 1.5rem;
+    padding: 5px 8px;
+    border-radius: 16px;
+    margin-top: 20px;
+  }
+}
+.hero-container button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.hero-container button:active {
+  border: 2px solid green;
+}
+
+.hero-image-container {
+  display: flex;
+  position: relative;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    width: 40%;
+    right: 3px;
+    bottom: -75px;
+    margin-left: 10px;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+    width: 30%;
+    right: 1px;
+    bottom: -50px;
+  }
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+    width: 30%;
+    right: 1px;
+    bottom: -50px;
+  }
+}
+.hero-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    min-width: 90px;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+    min-width: 90px;
+  }
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+    min-width: 90px;
+  }
 }

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import BookingForm from "../bookingForm/BookingForm";
-import photo1 from "../../../assets/images/restaurant chef B.jpg";
-import photo2 from "../../../assets/images/restaurant.jpg";
+import photo1 from "../../../assets/booking/restaurant-chef-B.webp";
+import photo2 from "../../../assets/booking/restaurant.webp";
 import "./bookingPage.css";
 
 const BookingPage = ({

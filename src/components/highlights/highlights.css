@@ -5,80 +5,251 @@
 }
 body {
   width: 100%;
+  font-size: 16px;
 }
-section.specials {
+
+img {
+  display: block; /* removes the white space beneath images*/
+}
+
+h2 {
+  font-family: "markaxi text", Arial;
+}
+p,
+button {
+  font-family: karla, "Times New Roman";
+}
+
+.specials-container {
   background-color: white;
-  padding-top: 50px;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    padding-top: 40px;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+    padding-top: 65px;
+  }
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+    padding-top: 80px;
+  }
 }
-.title-and-button {
+.title-button-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
+  position: relative;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    margin-top: 15px;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+  }
+
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+  }
 }
-.title-and-button h2 {
+.title-button-container h2 {
   color: #000000;
-  font-family: karla;
-  font-size: 2rem;
+  position: relative;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    position: relative;
+    left: 15px;
+    font-size: 0.9rem;
+    margin-right: 30px;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+    position: relative;
+    left: 80px;
+    font-size: 1.5rem;
+  }
+
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+    font-size: 2.5rem;
+    left: 100px;
+  }
 }
+.title-button-container button {
+  background-color: yellow;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 8px;
+  font-weight: bold;
+  position: relative;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    border-radius: 10px;
+    padding: 2px 4px;
+    font-size: 0.72rem;
+    right: 15px;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+    font-size: 1.1rem;
+    border-radius: 16px;
+    padding: 4px 6px;
+    right: 80px;
+  }
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+    font-size: 1.3rem;
+    right: 100px;
+  }
+}
+.title-button-container button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.title-button-container button:active {
+  border: 2px solid green;
+}
+
 .dish-cards {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-inline: 30px;
+  }
+
+  /*Tablets*/
+  @media (min-width: 600.1px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-inline: 40px;
+  }
+
+  /* Laptops and Desktops*/
+  @media (min-width: 1000px) {
+    justify-content: space-around;
+    padding-inline: 40px;
+  }
 }
 .dish-card {
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 20vw;
-  height: 62vh;
+  overflow: hidden; /* hides text with it overrides the card*/
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+  width: 20px;
+  height: 380px;
   margin-bottom: 20px;
+  position: relative;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    min-width: 130px;
+    width: 150px;
+    height: 275px;
+  }
+
+  /*Tablets */
+  @media (min-width: 600px) {
+    min-width: 200px;
+    width: 180px;
+  }
 }
 .dish-card img {
   width: 100%; /* Make image take full width */
-  height: 25vh; /* Set a fixed height */
-  object-fit: cover; /* Crop the image to fill the box */
-  display: block;
+  height: 160px; /* Set a fixed height */
+  object-fit: cover;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    height: 100px; /* Set a fixed height */
+  }
 }
-.dish-card .card-name-price {
-  white-space: nowrap;
-  padding-left: 10px;
+.dish-card .dish-price-container {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    padding-top: 10px;
+    padding-inline: 5px;
+  }
 }
 .dish-card .dish-name {
   color: rgb(0, 0, 0);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  font-family: "markazi text";
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
+  }
 }
 .dish-card .price {
-  color: #ee9972;
-  font-family: "markazi text";
+  color: orange;
+  font-size: 1rem;
+  position: absolute;
+  right: 10px;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
+  }
 }
 .dish-description {
   color: black;
-  font-family: karla;
   font-size: 1rem;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 10px;
+  padding-inline: 15px;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
+    padding-inline: 5px;
+    line-height: 15px;
+  }
 }
-.delivery-text {
-  font-family: karla;
+.delivery-btn {
   font-size: 1rem;
   font-weight: bold;
+  background-color: #32adff;
+  border: 1px solid black;
+  border-radius: 5px;
   color: rgb(0, 0, 0);
   white-space: nowrap;
-  padding-top: 20px;
-  padding-left: 10px;
+  padding: 3px 5px;
+  position: absolute;
+  left: 5px;
+  bottom: 15px;
+
+  /* Phones*/
+  @media (max-width: 600px) {
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 1px 2px;
+    left: 4px;
+    bottom: 8px;
+  }
 }
-.specials button {
-  background-color: yellow;
-  border-radius: 16px;
-  padding: 8px;
-  margin-top: 20px;
-  font-family: karla;
+.delivery-btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.delivery-btn:active {
+  border: 2px solid green;
 }
