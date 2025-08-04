@@ -21,7 +21,7 @@ form label {
 }
 form input,
 select {
-  padding: 0.6rem;
+  padding: 0.5rem;
   border-radius: 8px;
   width: 55vw;
   justify-self: center; /* to center the form inputs*/
