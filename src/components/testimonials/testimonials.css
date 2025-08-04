@@ -63,11 +63,11 @@ p {
 
   /* Phones*/
   @media (max-width: 600px) {
-    padding-inline: 50px;
-    flex-direction: column;
+    padding-inline: 30px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
   }
 
   /*Tablets*/

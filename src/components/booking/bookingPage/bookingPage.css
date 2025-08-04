@@ -9,9 +9,17 @@ body {
 .booking-page {
   background-color: #32adff;
   /*background-color: #014701;*/
-  /*margin: auto;*/
   margin: 0 1rem 0.5rem 1rem;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 }
+
+/* .native-content-container {
+} */
+
 .little-lemon {
   display: flex;
   justify-content: flex-end;

@@ -10,23 +10,23 @@ const BookingPage = ({
 }) => {
   return (
     <div className="booking-page">
-      <section className="little-lemon">
-        <h1>Little Lemon</h1>
-        <h2>Chicago</h2>
-      </section>
+      <div className="native-content-container">
+        <section className="little-lemon">
+          <h1>Little Lemon</h1>
+          <h2>Chicago</h2>
+        </section>
 
-      <section className="any-occasion">
-        <h3>Find a table for any occasion</h3>
+        <section className="any-occasion">
+          <h3>Find a table for any occasion</h3>
 
-        <div className="any-occasion-images">
-          <img src={photo1} alt="" />
-          <img src={photo2} alt="" />
-        </div>
-      </section>
+          <div className="any-occasion-images">
+            <img src={photo1} alt="" />
+            <img src={photo2} alt="" />
+          </div>
+        </section>
+      </div>
 
-      <section>
-        <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
-      </section>
+      <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
     </div>
   );
 };

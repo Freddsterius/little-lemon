@@ -4,7 +4,7 @@ import "./nav.css";
 
 const Nav = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar-container">
       <NavLink
         to="/"
         className={({ isActive }) =>

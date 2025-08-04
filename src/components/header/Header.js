@@ -5,10 +5,11 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <header>
-      <div className="website-logo">
-        <img src={logo} alt="little lemon logo"></img>
+    <header className="header-container">
+      <div className="logo-container">
+        <img src={logo} alt="little lemon logo" />
       </div>
+
       <Nav />
     </header>
   );

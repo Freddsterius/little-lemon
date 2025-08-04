@@ -14,14 +14,14 @@ const Hero = () => {
           recipes served with a modern twist.
         </p>
         <Link to="/booking">
-          <button>Reserve a Table</button>
+          <button className="reserve-btn">Reserve a Table</button>
         </Link>
       </div>
 
       <div className="hero-image-container">
         <img
           src={heroImage}
-          alt="a sample of some of litle lemon deliciuos food"
+          alt="a sample of some of litle lemon deliciuos cousine"
         />
       </div>
     </section>
