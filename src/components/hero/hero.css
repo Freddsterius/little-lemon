@@ -28,19 +28,19 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5rem;
+  gap: 1rem;
   padding-inline: 1.4rem;
   padding-top: 1rem;
 
   /*small*/
   @media (min-width: 576px) {
-    gap: 6rem;
+    gap: 3rem;
     padding-inline: 4rem;
   }
 
   /*medium*/
   @media (min-width: 768px) {
-    gap: 7rem;
+    gap: 5rem;
     padding-inline: 5rem;
   }
 

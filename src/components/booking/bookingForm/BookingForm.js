@@ -1,8 +1,125 @@
 import React, { useState } from "react";
 import "./bookingForm.css";
 
+const BookingForm = ({ availableTimes, handleDateChange }) => {
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("17:00");
+  const [guests, setGuests] = useState(1);
+  const [occasion, setOccasion] = useState("Birthday");
+  const [seatingOption, setSeatingOption] = useState("Standard");
+
+  const onDateChange = (e) => {
+    const selected = e.target.value;
+    setDate(selected);
+    // Propagates the change up to `Main` via the handler
+    handleDateChange(selected);
+  };
+
+  // Form Data submition handler function
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    //Submit logic — can send booking object to API or state
+    //console.log({ date, time, guests, occasion });
+  };
+
+  return (
+    <>
+      <form onSubmit={handleFormSubmit}>
+        <label htmlFor="res-date">Choose date:</label>
+        <input type="date" id="res-date" value={date} onChange={onDateChange} />
+        <p>
+          Selected:
+          <span style={{ color: "yellow" }}>{date}</span>
+        </p>
+        <label htmlFor="res-time">Choose time:</label>
+        <select
+          id="res-time"
+          value={time}
+          onChange={(e) => setTime(e.target.value)}
+        >
+          {/* Render availableTimes from props */}
+          {availableTimes.map((time) => (
+            <option key={time} value={time}>
+              {time}
+            </option>
+          ))}
+        </select>
+        <p>
+          Selected:
+          <span style={{ color: "yellow" }}>{time}</span>
+        </p>
+        <label htmlFor="guests">Number of guests:</label>
+        <input
+          type="number"
+          id="guests"
+          min="1"
+          max="10"
+          value={guests}
+          onChange={(e) => setGuests(e.target.value)}
+        />
+        <p>
+          Selected:
+          <span style={{ color: "yellow" }}>{guests}</span>
+        </p>
+        <label htmlFor="occasion">Occasion:</label>
+        <select
+          id="occasion"
+          value={occasion}
+          onChange={(e) => setOccasion(e.target.value)}
+        >
+          <option value="Birthday">Birthday</option>
+          <option value="Engagement">Engagement</option>
+          <option value="Anniversary">Anniversary</option>
+          <option value="Holiday">Holiday</option>
+        </select>
+        <p>
+          Selected:
+          <span style={{ color: "yellow" }}>{occasion}</span>
+        </p>
+
+        <label>Seating options</label>
+        <label htmlFor="standard">
+          Standrd
+          <input
+            type="radio"
+            id="standard"
+            name="seatingOption"
+            value="Standard"
+            checked={seatingOption === "Standard"}
+            onChange={(e) => setSeatingOption(e.target.value)}
+          />
+        </label>
+        <label htmlFor="outside">
+          Outside
+          <input
+            type="radio"
+            id="outside"
+            name="seatingOption"
+            value="Outside"
+            checked={seatingOption === "Outside"}
+            onChange={(e) => setSeatingOption(e.target.value)}
+          />
+        </label>
+        <p>
+          Selected:
+          <span style={{ color: "yellow" }}>{seatingOption}</span>
+        </p>
+
+        <button type="submit">Make a Reservation</button>
+      </form>
+    </>
+  );
+};
+export default BookingForm;
+
+/*
+reserved code 2:
+
+import React, { useState } from "react";
+import "./bookingForm.css";
+
 const BookingForm = ({ availableTimes, dispatch }) => {
-  /* 💀Reservation Date State💀 */
+  // 💀Reservation Date State💀
 
   // Format today's date to YYYY-MM-DD
   const getTodayDate = () => {
@@ -29,7 +146,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
     dispatch({ type: "UPDATE_TIMES", payload: newDate });
   };
 
-  /* 💀Selected time state💀 */
+  // 💀Selected time state💀
   const [selectedTime, setSelectedTime] = useState("17:00");
 
   // Handler for when a time is selected
@@ -37,32 +154,32 @@ const BookingForm = ({ availableTimes, dispatch }) => {
     setSelectedTime(e.target.value);
   };
 
-  /* form's initial state declaration */
-  const [formData, setFormData] = useState({
+  // form's initial state declaration
+  const [formData, setformData] = useState({
     numberOfGuests: 1,
     occasion: "Birthday",
     seatingPreference: "",
   });
 
-  /* single event handler */
+  // single event handler
 
   const handleChange = (event) => {
-    setFormData((prevState) => ({
+    setformData((prevState) => ({
       ...prevState,
       [event.target.name]: event.target.value,
     }));
   };
 
-  /*
-  *Alternative single event handler
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevState) => ({ ...prevState, [name]: value }));
-  };
-*/
+  // Alternative single event handler
 
-  /* form submition handler */
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target;
+  //   setformData((prevState) => ({ ...prevState, [name]: value }));
+  // };
+
+
+  // form submition handler
   const handleSubmit = (e) => {
     e.preventDefault();
     //console.log("All the forms data");
@@ -77,7 +194,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
           id="res-date"
           value={resDate}
           onChange={handleResDateChange}
-          required
+          requiyellow
         />
         <h5>
           Your selected date is:{" "}
@@ -89,7 +206,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
           id="res-time"
           value={selectedTime}
           onChange={handleResTimeChange}
-          required
+          requiyellow
         >
           {Array.isArray(availableTimes) &&
             availableTimes.map((time, index) => (
@@ -113,10 +230,10 @@ const BookingForm = ({ availableTimes, dispatch }) => {
           id="guests"
           value={formData.numberOfGuests}
           onChange={handleChange}
-          required
+          requiyellow
         />
         {formData.numberOfGuests > 10 && (
-          <p style={{ color: "red" }}>
+          <p style={{ color: "yellow" }}>
             ⚠Warning: Our maximum capacity for number of guests is 10.
           </p>
         )}
@@ -132,7 +249,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
           name="occasion"
           value={formData.occasion}
           onChange={handleChange}
-          required
+          requiyellow
         >
           <option value="Birthday">Birthday</option>
           <option value="Engagement">Engagement</option>
@@ -184,7 +301,10 @@ const BookingForm = ({ availableTimes, dispatch }) => {
 
 export default BookingForm;
 
+*/
+
 /*
+ reserved code 1:
 // BookingForm.js
 import React, { useState } from 'react';
 
@@ -253,5 +373,4 @@ function BookingForm({ selectedDate, onDateChange, availableTimes }) {
 }
 
 export default BookingForm;
-
 */
