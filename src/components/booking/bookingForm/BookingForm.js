@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./bookingForm.css";
+//import "./bookingForm.css";
 
-const BookingForm = ({ availableTimes, handleDateChange }) => {
+const BookingForm = ({ availableTimes = [], handleDateChange }) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("17:00");
   const [guests, setGuests] = useState(1);
@@ -25,6 +25,7 @@ const BookingForm = ({ availableTimes, handleDateChange }) => {
   return (
     <>
       <form onSubmit={handleFormSubmit}>
+        <h1>Reservation Form</h1>
         <label htmlFor="res-date">Choose date:</label>
         <input type="date" id="res-date" value={date} onChange={onDateChange} />
         <p>
