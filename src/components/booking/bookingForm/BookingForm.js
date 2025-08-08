@@ -25,7 +25,6 @@ const BookingForm = ({ availableTimes = [], handleDateChange }) => {
   return (
     <>
       <form onSubmit={handleFormSubmit}>
-        <h1>Reservation Form</h1>
         <label htmlFor="res-date">Choose date:</label>
         <input type="date" id="res-date" value={date} onChange={onDateChange} />
         <p>
@@ -78,7 +77,7 @@ const BookingForm = ({ availableTimes = [], handleDateChange }) => {
           <span style={{ color: "yellow" }}>{occasion}</span>
         </p>
 
-        <label>Seating options</label>
+        <label>Seating options:</label>
         <label htmlFor="standard">
           Standrd
           <input

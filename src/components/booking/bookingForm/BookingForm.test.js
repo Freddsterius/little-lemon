@@ -1,9 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import BookingForm from "./BookingForm";
 
-test("Renders the BookingForm heading", () => {
-  const availableTimes = ["10:00 AM", "2:00 PM"]; // Define availableTimes
+test("Renders the BookingForm form's submition button text", () => {
+  const availableTimes = ["17:00", "18:00"]; // Define availableTimes
   const handleDateChange = jest.fn(); // Mock function for handleDateChange
+
   render(
     <BookingForm
       availableTimes={availableTimes}
@@ -11,7 +12,6 @@ test("Renders the BookingForm heading", () => {
     />
   );
 
-  const txt = screen.getByText("Reservation Form");
-  //expect(txt).toBeInTheDocument();
-  expect(screen.getByText(/reservation form/i)).toBeInTheDocument();
+  const btnText = screen.getByText(/make a reservation/i);
+  expect(btnText).toBeInTheDocument();
 });

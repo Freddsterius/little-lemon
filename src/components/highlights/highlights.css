@@ -1,11 +1,9 @@
-* {
+*,
+::before,
+::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-body {
-  width: 100%;
-  font-size: 16px;
 }
 
 img {
@@ -21,235 +19,233 @@ button {
 }
 
 .specials-container {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  padding-block: 3rem;
+  padding-inline: 1.4rem;
 
-  /* Phones*/
-  @media (max-width: 600px) {
-    padding-top: 40px;
+  /*small*/
+  @media (min-width: 576px) {
+    padding-top: 3.5rem;
+    padding-inline: 4rem;
   }
 
-  /*Tablets*/
-  @media (min-width: 600.1px) {
-    padding-top: 65px;
+  /*medium*/
+  @media (min-width: 768px) {
+    padding-top: 4rem;
+    padding-inline: 5rem;
   }
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
-    padding-top: 80px;
+
+  /*large*/
+  @media (min-width: 992px) {
+    padding-top: 5rem;
+    padding-inline: 7rem;
+  }
+
+  /*extra large*/
+  @media (min-width: 1200px) {
+    padding-top: 6rem;
+    padding-inline: 9rem;
+  }
+
+  /*extra extra large*/
+  @media (min-width: 1400px) {
+    padding-top: 7rem;
+    padding-inline: 10rem;
   }
 }
+
 .title-button-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-
-  /* Phones*/
-  @media (max-width: 600px) {
-    margin-top: 15px;
-  }
-
-  /*Tablets*/
-  @media (min-width: 600.1px) {
-  }
-
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
-  }
 }
 .title-button-container h2 {
   color: #000000;
-  position: relative;
+  font-size: 1.3rem;
+  font-weight: bold;
 
-  /* Phones*/
-  @media (max-width: 600px) {
-    position: relative;
-    left: 15px;
-    font-size: 0.9rem;
-    margin-right: 30px;
-  }
-
-  /*Tablets*/
-  @media (min-width: 600.1px) {
-    position: relative;
-    left: 80px;
+  /*small*/
+  @media (min-width: 576px) {
     font-size: 1.5rem;
   }
 
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
-    font-size: 2.5rem;
-    left: 100px;
+  /*medium*/
+  @media (min-width: 768px) {
+    font-size: 1.6rem;
+  }
+
+  /*large*/
+  @media (min-width: 992px) {
+    font-size: 1.7rem;
+  }
+
+  /*extra large*/
+  @media (min-width: 1200px) {
+    font-size: 1.8rem;
+  }
+
+  /*extra extra large*/
+  @media (min-width: 1400px) {
+    font-size: 1.9rem;
   }
 }
 .title-button-container button {
-  background-color: yellow;
-  border: 1px solid black;
-  border-radius: 16px;
-  padding: 8px;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 8px;
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+  white-space: nowrap;
   font-weight: bold;
-  position: relative;
+  transition: opacity 200ms;
 
-  /* Phones*/
-  @media (max-width: 600px) {
-    border-radius: 10px;
-    padding: 2px 4px;
-    font-size: 0.72rem;
-    right: 15px;
+  /*small*/
+  @media (min-width: 576px) {
+    padding: 0.4rem 0.6rem;
   }
 
-  /*Tablets*/
-  @media (min-width: 600.1px) {
+  /*medium*/
+  @media (min-width: 768px) {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+  }
+
+  /*large*/
+  @media (min-width: 992px) {
+    padding: 0.6rem 0.8rem;
     font-size: 1.1rem;
-    border-radius: 16px;
-    padding: 4px 6px;
-    right: 80px;
   }
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
+
+  /*extra large*/
+  @media (min-width: 1200px) {
+    padding: 0.7rem 0.9rem;
+    font-size: 1.2rem;
+  }
+
+  /*extra extra large*/
+  @media (min-width: 1400px) {
+    padding: 0.81rem 1rem;
     font-size: 1.3rem;
-    right: 100px;
   }
 }
+
 .title-button-container button:hover {
   cursor: pointer;
   opacity: 0.5;
 }
-.title-button-container button:active {
-  border: 2px solid green;
-}
 
-.dish-cards {
-  display: flex;
-  justify-content: space-around;
+.dish-cards-container {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-auto-rows: minmax(50px, auto);
+  gap: 2rem;
   margin-top: 20px;
 
-  /* Phones*/
-  @media (max-width: 600px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding-inline: 30px;
+  /*small*/
+  @media (min-width: 576px) {
+    gap: 2rem;
   }
 
-  /*Tablets*/
-  @media (min-width: 600.1px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding-inline: 40px;
+  /*medium*/
+  @media (min-width: 768px) {
+    gap: 3rem;
   }
 
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
-    justify-content: space-around;
-    padding-inline: 40px;
+  /*large*/
+  @media (min-width: 992px) {
+    gap: 4rem;
+  }
+
+  /*extra large*/
+  @media (min-width: 1200px) {
+    gap: 5rem;
+  }
+
+  /*extra extra large*/
+  @media (min-width: 1400px) {
+    gap: 6rem;
   }
 }
 .dish-card {
-  border: 1.5px solid black;
+  border: 2px solid black;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  overflow: hidden; /* hides text with it overrides the card*/
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
-  width: 20px;
-  height: 380px;
-  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
+  height: auto;
+  padding-bottom: 50px;
   position: relative;
-
-  /* Phones*/
-  @media (max-width: 600px) {
-    min-width: 130px;
-    width: 150px;
-    height: 275px;
-  }
-
-  /*Tablets */
-  @media (min-width: 600px) {
-    min-width: 200px;
-    width: 180px;
-  }
 }
+
 .dish-card img {
   width: 100%; /* Make image take full width */
-  height: 160px; /* Set a fixed height */
+  height: auto;
   object-fit: cover;
-
-  /* Phones*/
-  @media (max-width: 600px) {
-    height: 100px; /* Set a fixed height */
-  }
 }
+
 .dish-card .dish-price-container {
-  padding: 10px 10px;
+  padding: 1rem;
   display: flex;
   align-items: center;
   position: relative;
-
-  /* Phones*/
-  @media (max-width: 600px) {
-    padding-top: 10px;
-    padding-inline: 5px;
-  }
 }
+
 .dish-card .dish-name {
   color: rgb(0, 0, 0);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
-
-  /* Phones*/
-  @media (max-width: 600px) {
-    font-size: 0.8rem;
-  }
 }
 .dish-card .price {
   color: orange;
   font-size: 1rem;
   position: absolute;
   right: 10px;
-
-  /* Phones*/
-  @media (max-width: 600px) {
-    font-size: 0.8rem;
-  }
 }
 .dish-description {
   color: black;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding-inline: 15px;
-
-  /* Phones*/
-  @media (max-width: 600px) {
-    font-size: 0.8rem;
-    padding-inline: 5px;
-    line-height: 15px;
-  }
+  line-height: 1.1rem;
 }
+
 .delivery-btn {
   font-size: 1rem;
   font-weight: bold;
-  background-color: #32adff;
-  border: 1px solid black;
+  background-color: #ffdf3f;
+  border: none;
   border-radius: 5px;
   color: rgb(0, 0, 0);
   white-space: nowrap;
-  padding: 3px 5px;
+  padding: 0.2rem 0.5rem;
   position: absolute;
-  left: 5px;
-  bottom: 15px;
-
-  /* Phones*/
-  @media (max-width: 600px) {
-    font-size: 0.7rem;
-    font-weight: bold;
-    padding: 1px 2px;
-    left: 4px;
-    bottom: 8px;
-  }
+  left: 0.5rem;
+  bottom: 0.8rem;
+  transition: opacity 200ms;
 }
 .delivery-btn:hover {
   cursor: pointer;
   opacity: 0.6;
 }
-.delivery-btn:active {
-  border: 2px solid green;
+
+/******************************************/
+/* Pre-configured media quert breakpoints */
+/*small*/
+@media (min-width: 576px) {
+}
+
+/*medium*/
+@media (min-width: 768px) {
+}
+
+/*large*/
+@media (min-width: 992px) {
+}
+
+/*extra large*/
+@media (min-width: 1200px) {
+}
+
+/*extra extra large*/
+@media (min-width: 1400px) {
 }

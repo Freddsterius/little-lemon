@@ -1,5 +1,5 @@
 import React, { useReducer /* useEffect */ } from "react";
-//import { fetchAPI, submitAPI } from "../../APIs/api";
+import { fetchAPI, submitAPI } from "../../APIs/api";
 import { Routes, Route } from "react-router-dom";
 
 import HomePage from "../homepage/HomePage";

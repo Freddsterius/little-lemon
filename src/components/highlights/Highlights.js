@@ -12,7 +12,7 @@ const Highlights = () => {
         <button>Online Menu</button>
       </div>
 
-      <div className="dish-cards">
+      <div className="dish-cards-container">
         <div className="dish-card">
           <img src={greekSalad} alt="a delicious greek salad" />
           <div className="dish-price-container">
