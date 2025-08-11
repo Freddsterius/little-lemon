@@ -9,6 +9,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials-container">
       <h2 className="testimonials-title">Testimonials</h2>
+
       <div className="rating-cards-container">
         <div className="rating-card">
           <p>Rating</p>
@@ -21,12 +22,10 @@ const Testimonials = () => {
 
         <div className="rating-card">
           <p>Rating</p>
-
           <div className="photo-name-container">
             <img src={profilePhotoi} alt="user profile 2" />
             <p>Name</p>
           </div>
-
           <p>Review Text</p>
         </div>
 

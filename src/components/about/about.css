@@ -1,11 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
+*,
+::before,
+::after {
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
-}
-body {
-  width: 100%;
-  font-size: 16px;
 }
 img {
   display: block; /* removes the white space beneath images*/
@@ -20,119 +18,149 @@ p {
 }
 
 .about-container {
-  background-color: rgb(93, 134, 134) /*rgb(182, 168, 168)*/;
+  background-color: rgb(107, 48, 48) /*rgb(182, 168, 168)*/;
+  min-height: 90vh;
+  padding: 1rem 1.4rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-block: 20px;
+  gap: 5rem;
 
-  /* Phones*/
-  @media (max-width: 600px) {
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    padding-inline: 20px;
-    height: 500px;
+  /*small*/
+  @media (min-width: 576px) {
+    padding-inline: 4rem;
   }
 
-  /*Tablets*/
-  @media (min-width: 600.1px) {
-    padding-inline: 50px;
-    height: 390px;
+  /*medium*/
+  @media (min-width: 768px) {
+    padding-inline: 5rem;
   }
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
-    padding-inline: 90px;
-    height: 420px;
+
+  /*large*/
+  @media (min-width: 992px) {
+    padding-inline: 7rem;
+    flex-direction: row;
+  }
+
+  /*extra large*/
+  @media (min-width: 1200px) {
+    padding-inline: 9rem;
+    flex-direction: row;
+  }
+
+  /*extra extra large*/
+  @media (min-width: 1400px) {
+    padding-inline: 10rem;
+    flex-direction: row;
   }
 }
 
 .about-text-container {
-  /*Tablets*/
-  @media (min-width: 600.1px) {
-    width: 60%;
-  }
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
-    width: 60%;
-  }
+  background-color: #fce575;
+  flex: 3;
 }
 .about-text-container h1 {
-  color: #f4c314;
-  white-space: nowrap;
+  /* mobile 1st or extra small  */
+  font-size: 1.7rem;
+  color: #f4ce14;
 
-  /* Phones*/
-  @media (max-width: 600px) {
-    font-size: 1.7rem;
+  /*small*/
+  @media (min-width: 576px) {
+    font-size: 1.8rem;
   }
 
-  /*Tablets*/
-  @media (min-width: 600.1px) {
+  /*medium*/
+  @media (min-width: 768px) {
+    font-size: 1.9rem;
+  }
+
+  /*large*/
+  @media (min-width: 992px) {
+    font-size: 2rem;
+  }
+
+  /*extra large*/
+  @media (min-width: 1200px) {
+    font-size: 2.2rem;
+  }
+
+  /*extra extra large*/
+  @media (min-width: 1400px) {
     font-size: 2.5rem;
-  }
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
-    font-size: 4rem;
   }
 }
 .about-text-container h2 {
+  /* mobile 1st or extra small  */
+  font-size: 1.3rem;
   color: #ffffff;
 
-  /* Phones*/
-  @media (max-width: 600px) {
+  /*small*/
+  @media (min-width: 576px) {
     font-size: 1.3rem;
   }
 
-  /*Tablets*/
-  @media (min-width: 600.1px) {
-    font-size: 2rem;
+  /*medium*/
+  @media (min-width: 768px) {
+    font-size: 1.4rem;
   }
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
-    font-size: 2.4rem;
+
+  /*large*/
+  @media (min-width: 992px) {
+    font-size: 1.5rem;
+  }
+
+  /*extra large*/
+  @media (min-width: 1200px) {
+    font-size: 1.6rem;
+  }
+
+  /*extra extra large*/
+  @media (min-width: 1400px) {
+    font-size: 1.7rem;
   }
 }
 .about-text-container p {
-  margin-block: 10px;
+  /* mobile 1st or extra small  */
+  font-size: 1rem;
   color: #ffffff;
+  line-height: 1.3rem;
+  padding-block: 1rem;
 
-  /* Phones*/
-  @media (max-width: 600px) {
-    font-size: 0.8rem;
-    margin-block: 7px;
+  /*small*/
+  @media (min-width: 576px) {
+    line-height: 1.4rem;
   }
 
-  /*Tablets*/
-  @media (min-width: 600.1px) {
+  /*medium*/
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /*large*/
+  @media (min-width: 992px) {
     font-size: 1.1rem;
+    line-height: 1.6rem;
   }
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
+
+  /*extra large*/
+  @media (min-width: 1200px) {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  /*extra extra large*/
+  @media (min-width: 1400px) {
     font-size: 1.3rem;
+    line-height: 1.8rem;
   }
 }
 
 .about-images-container {
+  background-color: pink;
   position: relative;
-
-  /* Phones*/
-  @media (max-width: 600px) {
-    width: 100%;
-    height: 200px;
-    padding-inline: 20px;
-  }
-
-  /*Tablets*/
-  @media (min-width: 600.1px) {
-    margin-left: 10px;
-    width: 40%;
-    height: 280px;
-  }
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
-    width: 30%;
-    height: 340px;
-  }
+  flex: 2;
 }
 .photo {
   position: absolute;
@@ -197,4 +225,26 @@ p {
     left: 30px;
     z-index: 1;
   }
+}
+
+/******************************************/
+/* Pre-configured media quert breakpoints */
+/*small*/
+@media (min-width: 576px) {
+}
+
+/*medium*/
+@media (min-width: 768px) {
+}
+
+/*large*/
+@media (min-width: 992px) {
+}
+
+/*extra large*/
+@media (min-width: 1200px) {
+}
+
+/*extra extra large*/
+@media (min-width: 1400px) {
 }
