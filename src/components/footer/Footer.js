@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import footerLogo from "../../assets/hero/restauranfood.webp";
+import footerLogo from "../../assets/footer/secondaryLogo.png";
 import "./footer.css";
 
 const Footer = () => {
