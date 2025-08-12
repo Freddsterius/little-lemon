@@ -48,17 +48,14 @@ p {
 .about-images-container {
   position: relative;
   width: 300px; /* adjust to fit your layout */
-  height: 400px;
+  height: 500px;
   margin: auto;
 }
 .about-images-container img {
   position: absolute;
-
-  height: auto;
+  height: 300px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  max-width: 100%;
+  width: 220px;
 }
 .right-img {
   top: 0rem;
