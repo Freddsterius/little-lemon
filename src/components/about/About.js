@@ -20,12 +20,8 @@ const About = () => {
       </div>
 
       <div className="about-images-container">
-        <img src={imgTop} className="photo left-img" alt="little lemon logo" />
-        <img
-          src={imgBottom}
-          className="photo right-img"
-          alt="little lemon logo"
-        />
+        <img src={imgTop} className="left-img" alt="little lemon logo" />
+        <img src={imgBottom} className="right-img" alt="little lemon logo" />
       </div>
     </section>
   );
