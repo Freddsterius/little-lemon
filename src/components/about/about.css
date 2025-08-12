@@ -22,7 +22,7 @@ p {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
   padding: 2rem 1.4rem;
 
   /*small*/
