@@ -4,7 +4,11 @@ import photo1 from "../../../assets/booking/restaurant-chef-B.webp";
 import photo2 from "../../../assets/booking/restaurant.webp";
 import "./bookingPage.css";
 
-const BookingPage = ({ availableTimes = [], handleDateChange }) => {
+const BookingPage = ({
+  availableTimes = [],
+  handleDateChange,
+  submitForm = { submitForm },
+}) => {
   return (
     <div className="booking-page">
       <div className="native-content-container">
@@ -26,6 +30,7 @@ const BookingPage = ({ availableTimes = [], handleDateChange }) => {
       <BookingForm
         availableTimes={availableTimes}
         handleDateChange={handleDateChange}
+        submitForm={submitForm}
       />
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./bookingForm.css";
 
-const BookingForm = ({ availableTimes = [], handleDateChange }) => {
+const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("17:00");
   const [guests, setGuests] = useState(1);
@@ -15,16 +15,9 @@ const BookingForm = ({ availableTimes = [], handleDateChange }) => {
     handleDateChange(selected);
   };
 
-  // Form Data submition handler function
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    //Submit logic — can send booking object to API or state
-    //console.log({ date, time, guests, occasion });
-  };
-
   return (
     <>
-      <form onSubmit={handleFormSubmit}>
+      <form onSubmit={submitForm}>
         <label htmlFor="res-date">Choose date:</label>
         <input type="date" id="res-date" value={date} onChange={onDateChange} />
         <p>

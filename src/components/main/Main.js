@@ -1,6 +1,6 @@
 import React, { useReducer, useEffect } from "react";
 import { fetchAPI, submitAPI } from "../../APIs/api";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 import HomePage from "../homepage/HomePage";
 import BookingPage from "../booking/bookingPage/BookingPage";
@@ -8,6 +8,7 @@ import Hero from "../hero/Hero";
 import Highlights from "../highlights/Highlights";
 import Testimonials from "../testimonials/Testimonials";
 import About from "../about/About";
+import ConfirmedBooking from "../booking/confirmedBooking/ConfirmedBooking";
 
 // ✅ Fixed: fetchAPI returns data directly, no Promise
 function initializeTimes() {
@@ -40,6 +41,18 @@ const Main = () => {
     dispatch({ type: "SET_TIMES", payload: times });
   };
 
+  const navigate = useNavigate();
+
+  const submitForm = (event, formData) => {
+    event.preventDefault();
+
+    if (submitAPI(formData)) {
+      navigate("/confirmed");
+    } else {
+      alert("Booking failed. Please try again.");
+    }
+  };
+
   return (
     <main>
       <Routes>
@@ -50,6 +63,7 @@ const Main = () => {
             <BookingPage
               availableTimes={availableTimes}
               handleDateChange={handleDateChange}
+              submitForm={submitForm}
             />
           }
         />
@@ -57,6 +71,8 @@ const Main = () => {
         <Route path="/highlights" element={<Highlights />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/about" element={<About />} />
+
+        <Route path="/confirmed" element={<ConfirmedBooking />} />
       </Routes>
     </main>
   );
