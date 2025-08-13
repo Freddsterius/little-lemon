@@ -7,14 +7,13 @@ body {
   width: 100%;
 }
 .booking-page {
-  background-color: #9c72ad;
-  /*background-color: #014701;*/
+  background-color: #014701;
   margin: 0 1rem 0.5rem 1rem;
-
-  /* display: flex;
+  padding-inline: 1.4rem;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
 }
 
 /* .native-content-container {
@@ -22,11 +21,9 @@ body {
 
 .little-lemon {
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
   align-self: flex-start;
-  padding-left: 100px;
-  padding-top: 15px;
+  padding-top: 1rem;
   font-family: karla;
 }
 .little-lemon h1 {
@@ -41,10 +38,14 @@ body {
   color: white;
   font-size: 1.5rem;
 }
+
+.any-occasion {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
 .any-occasion h3 {
-  align-self: flex-start;
-  padding-left: 100px;
-  padding-top: 30px;
+  padding-top: 1.8rem;
   font-family: karla;
   color: white;
 }
@@ -54,16 +55,10 @@ body {
   justify-content: center;
   flex-direction: row;
   margin: auto;
-  /*
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-block: 20px;
-*/
-  padding: 30px 20px;
+  padding: 1.8rem 1.3rem;
 }
 .any-occasion-images img {
-  width: 25vw;
-  margin-inline: 10px;
-  text-align: center;
+  max-width: 30%;
+  margin-inline: 0.6rem;
   border-radius: 7px;
 }

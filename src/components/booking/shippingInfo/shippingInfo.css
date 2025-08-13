@@ -4,7 +4,18 @@
   padding: 0px;
   margin: 0px;
 }
-.boooking-form {
+.master-container {
+  background-color: #014701;
+  margin: 0 1rem 0.5rem 1rem;
+  padding-inline: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.shipping-info-form {
   padding: 1rem;
   display: grid;
   gap: 1rem;
@@ -12,18 +23,24 @@
   max-width: 50vw;
   margin: auto;
 }
-.boooking-form input,
-select {
+
+.shipping-info-form .form-title {
+  align-self: self-start;
+  font-size: 1rem;
+  color: white;
+  padding-block: 0.5rem;
+}
+.shipping-info-form input {
   padding: 0.5rem;
   border-radius: 5px;
   width: 53vw;
 }
-.boooking-form label {
+.shipping-info-form label {
   color: white;
   font-family: karla;
 }
 
-.boooking-form .res-btn {
+.shipping-info-form .book-btn {
   color: rgb(0, 0, 0);
   background-color: #f4ce14;
   padding: 0.5em;
@@ -35,7 +52,7 @@ select {
   justify-self: center;
   transition: opacity 200ms;
 }
-.boooking-form .res-btn:hover {
+.shipping-info-form .book-btn:hover {
   cursor: pointer;
   opacity: 0.5;
 }

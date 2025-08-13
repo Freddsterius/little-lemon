@@ -4,11 +4,7 @@ import photo1 from "../../../assets/booking/restaurant-chef-B.webp";
 import photo2 from "../../../assets/booking/restaurant.webp";
 import "./bookingPage.css";
 
-const BookingPage = ({
-  availableTimes = [],
-  handleDateChange,
-  submitForm = { submitForm },
-}) => {
+const BookingPage = ({ availableTimes = [], handleDateChange, submitForm }) => {
   return (
     <div className="booking-page">
       <div className="native-content-container">

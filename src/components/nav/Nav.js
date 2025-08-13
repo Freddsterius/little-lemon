@@ -37,6 +37,16 @@ const Nav = () => {
       >
         About
       </NavLink>
+
+      <NavLink
+        to="/menu"
+        className={({ isActive }) =>
+          isActive ? "navbar-link active" : "navbar-link"
+        }
+      >
+        Menu
+      </NavLink>
+
       <NavLink
         to="/booking"
         className={({ isActive }) =>
@@ -44,6 +54,15 @@ const Nav = () => {
         }
       >
         Reservations
+      </NavLink>
+
+      <NavLink
+        to="/login"
+        className={({ isActive }) =>
+          isActive ? "navbar-link active" : "navbar-link"
+        }
+      >
+        Login
       </NavLink>
     </nav>
   );

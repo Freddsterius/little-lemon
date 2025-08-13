@@ -17,13 +17,10 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
 
   return (
     <>
-      <form onSubmit={submitForm}>
+      <form onSubmit={submitForm} className="boooking-form">
         <label htmlFor="res-date">Choose date:</label>
         <input type="date" id="res-date" value={date} onChange={onDateChange} />
-        <p>
-          Selected:
-          <span style={{ color: "yellow" }}>{date}</span>
-        </p>
+
         <label htmlFor="res-time">Choose time:</label>
         <select
           id="res-time"
@@ -37,10 +34,7 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
             </option>
           ))}
         </select>
-        <p>
-          Selected:
-          <span style={{ color: "yellow" }}>{time}</span>
-        </p>
+
         <label htmlFor="guests">Number of guests:</label>
         <input
           type="number"
@@ -50,10 +44,7 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
           value={guests}
           onChange={(e) => setGuests(e.target.value)}
         />
-        <p>
-          Selected:
-          <span style={{ color: "yellow" }}>{guests}</span>
-        </p>
+
         <label htmlFor="occasion">Occasion:</label>
         <select
           id="occasion"
@@ -65,23 +56,22 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
           <option value="Anniversary">Anniversary</option>
           <option value="Holiday">Holiday</option>
         </select>
-        <p>
-          Selected:
-          <span style={{ color: "yellow" }}>{occasion}</span>
-        </p>
 
         <label>Seating options:</label>
-        <label htmlFor="standard">
-          Standrd
-          <input
-            type="radio"
-            id="standard"
-            name="seatingOption"
-            value="Standard"
-            checked={seatingOption === "Standard"}
-            onChange={(e) => setSeatingOption(e.target.value)}
-          />
-        </label>
+        <div>
+          <label htmlFor="standard">
+            Standard
+            <input
+              type="radio"
+              id="standard"
+              name="seatingOption"
+              value="Standard"
+              checked={seatingOption === "Standard"}
+              onChange={(e) => setSeatingOption(e.target.value)}
+            />
+          </label>
+        </div>
+
         <label htmlFor="outside">
           Outside
           <input
@@ -93,12 +83,10 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
             onChange={(e) => setSeatingOption(e.target.value)}
           />
         </label>
-        <p>
-          Selected:
-          <span style={{ color: "yellow" }}>{seatingOption}</span>
-        </p>
 
-        <button type="submit">Make a Reservation</button>
+        <button type="submit" className="res-btn">
+          Make a Reservation
+        </button>
       </form>
     </>
   );

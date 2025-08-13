@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from "react";
+import React, { useReducer /*useEffect*/ } from "react";
 import { fetchAPI, submitAPI } from "../../APIs/api";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
@@ -8,12 +8,15 @@ import Hero from "../hero/Hero";
 import Highlights from "../highlights/Highlights";
 import Testimonials from "../testimonials/Testimonials";
 import About from "../about/About";
+import Login from "../login/Login";
+import Menu from "../menu/Menu";
+
+import ShippingInfo from "../booking/shippingInfo/ShippingInfo";
 import ConfirmedBooking from "../booking/confirmedBooking/ConfirmedBooking";
 
-// ✅ Fixed: fetchAPI returns data directly, no Promise
 function initializeTimes() {
   const today = new Date();
-  return fetchAPI(today); // Returns array directly
+  return fetchAPI(today);
 }
 
 function updateTimes(state, action) {
@@ -28,15 +31,9 @@ function updateTimes(state, action) {
 const Main = () => {
   const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
 
-  // ✅ No useEffect needed since fetchAPI is synchronous
-  // The initial state is already set by initializeTimes()
-
-  // ✅ Fixed: Handle fetchAPI synchronously
   const handleDateChange = (dateString) => {
     const dateObj = new Date(dateString);
-    console.log("handleDateChange fetchAPI param:", dateObj, typeof dateObj);
 
-    // Call fetchAPI directly and dispatch the result
     const times = fetchAPI(dateObj);
     dispatch({ type: "SET_TIMES", payload: times });
   };
@@ -47,7 +44,7 @@ const Main = () => {
     event.preventDefault();
 
     if (submitAPI(formData)) {
-      navigate("/confirmed");
+      navigate("/shipping");
     } else {
       alert("Booking failed. Please try again.");
     }
@@ -71,7 +68,10 @@ const Main = () => {
         <Route path="/highlights" element={<Highlights />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/menu" element={<Menu />} />
 
+        <Route path="/shipping" element={<ShippingInfo />} />
         <Route path="/confirmed" element={<ConfirmedBooking />} />
       </Routes>
     </main>

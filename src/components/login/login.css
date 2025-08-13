@@ -4,7 +4,7 @@
   padding: 0px;
   margin: 0px;
 }
-.last-little-lemon {
+.login-little-lemon {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -14,20 +14,20 @@
   top: 1rem;
   left: 2rem;
 }
-.last-little-lemon h1 {
+.login-little-lemon h1 {
   display: flex;
   align-self: flex-start;
   color: #f4ce14;
   font-size: 2rem;
 }
-.last-little-lemon h2 {
+.login-little-lemon h2 {
   display: flex;
   align-self: flex-start;
   color: white;
   font-size: 1.5rem;
 }
 
-.all-container {
+.login-container {
   background-color: #014701;
   margin: 0 1rem 0.5rem 1rem;
   padding-inline: 1.4rem;
@@ -38,15 +38,35 @@
   min-height: 90vh;
   position: relative;
 }
-.text-container {
-  background-color: rgb(255, 255, 255);
-  padding-inline: 2rem;
-  line-height: 2rem;
-  margin-top: 5rem;
-  min-height: 30vh;
+
+.login-form {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 50vw;
+  margin: auto;
+  margin-top: 7rem;
 }
 
-.back-btn {
+.login-form .form-title {
+  align-self: self-start;
+  font-size: 1rem;
+  color: white;
+  padding-block: 0.5rem;
+}
+.login-form input,
+textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 53vw;
+}
+.login-form label {
+  color: white;
+  font-family: karla;
+}
+
+.login-btn {
   color: rgb(255, 255, 255);
   background-color: #000000;
   padding: 0.5em;
@@ -60,7 +80,7 @@
   position: absolute;
   bottom: 1rem;
 }
-.back-btn:hover {
+.login-btn:hover {
   cursor: pointer;
   opacity: 0.5;
 }
