@@ -6,9 +6,9 @@ import "./menu.css";
 
 const Menu = () => {
   return (
-    <div className="menu-container">
+    <div className="menu-menu-container">
       <h4>Menu</h4>
-      <div className="dish-cards-container">
+      <div className="menu-dish-cards-container">
         <div className="dish-card">
           <img src={greekSalad} alt="a delicious greek salad" />
           <div className="dish-price-container">

@@ -35,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -59,7 +59,7 @@
 textarea {
   padding: 0.5rem;
   border-radius: 5px;
-  width: 53vw;
+  width: 80vw;
 }
 .login-form label {
   color: white;

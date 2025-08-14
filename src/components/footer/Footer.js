@@ -20,23 +20,18 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/hero" className="doormat-nav-link">
-                Hero
+              <Link to="/menu" className="doormat-nav-link">
+                Menu
               </Link>
             </li>
             <li>
-              <Link to="/highlights" className="doormat-nav-link">
-                Highlights
+              <Link to="/booking" className="doormat-nav-link">
+                Reservations
               </Link>
             </li>
             <li>
-              <Link to="/testimonials" className="doormat-nav-link">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="doormat-nav-link">
-                About
+              <Link to="/login" className="doormat-nav-link">
+                Login
               </Link>
             </li>
           </ul>

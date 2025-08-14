@@ -8,11 +8,23 @@
   background-color: #014701;
   margin: 0 1rem 0.5rem 1rem;
   padding-inline: 1.4rem;
+  min-height: 90vh;
+}
+
+.little-lemon {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 90vh;
+  padding-top: 1rem;
+  font-family: karla;
+}
+.little-lemon h1 {
+  color: #f4ce14;
+  font-size: 2rem;
+}
+.little-lemon h2 {
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .shipping-info-form {
@@ -33,7 +45,7 @@
 .shipping-info-form input {
   padding: 0.5rem;
   border-radius: 5px;
-  width: 53vw;
+  width: 80vw;
 }
 .shipping-info-form label {
   color: white;

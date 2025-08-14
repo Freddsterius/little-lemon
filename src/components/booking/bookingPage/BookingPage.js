@@ -8,6 +8,20 @@ const BookingPage = ({ availableTimes = [], handleDateChange, submitForm }) => {
   return (
     <div className="booking-page">
       <div className="native-content-container">
+        <section className="little-lemon-container">
+          <h1>Little Lemon</h1>
+          <h2>Chicago</h2>
+        </section>
+
+        <h3>Find a table for any occasion</h3>
+        <div className="images-container">
+          <img src={photo1} alt="a chef prepering a delicious meal" />
+          <img src={photo2} alt=" a beautiful resort" />
+        </div>
+      </div>
+
+      {/*
+      <div className="native-content-container">
         <section className="little-lemon">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
@@ -21,7 +35,7 @@ const BookingPage = ({ availableTimes = [], handleDateChange, submitForm }) => {
             <img src={photo2} alt="" />
           </div>
         </section>
-      </div>
+      </div> */}
 
       <BookingForm
         availableTimes={availableTimes}

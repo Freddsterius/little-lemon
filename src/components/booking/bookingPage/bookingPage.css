@@ -16,10 +16,7 @@ body {
   justify-content: center;
 }
 
-/* .native-content-container {
-} */
-
-.little-lemon {
+/* .little-lemon {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -61,4 +58,44 @@ body {
   max-width: 30%;
   margin-inline: 0.6rem;
   border-radius: 7px;
+} */
+
+.little-lemon-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  font-family: karla;
+}
+.little-lemon-container h1 {
+  color: #f4ce14;
+  font-size: 2rem;
+}
+.little-lemon-container h2 {
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.native-content-container h3 {
+  padding-block: 1rem;
+  padding-left: 2rem;
+  font-family: karla;
+  color: white;
+}
+
+.images-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: auto;
+  padding-inline: 1.5rem;
+
+  /*large and beyond*/
+  @media (min-width: 992px) {
+    width: 45%;
+  }
+}
+.images-container img {
+  max-width: 100%;
+  border-radius: 5px;
 }

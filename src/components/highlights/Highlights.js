@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import greekSalad from "../../assets/highlights/greek-salad-50.webp";
 import bruchetta from "../../assets/highlights/bruschetta-50.webp";
 import lemeonDessert from "../../assets/highlights/lemon-dessert.jpg";
@@ -9,7 +10,9 @@ const Highlights = () => {
     <section className="specials-container">
       <div className="title-button-container">
         <h2>This weeks specials!</h2>
-        <button>Online Menu</button>
+        <Link to="/menu">
+          <button>Online Menu</button>
+        </Link>
       </div>
 
       <div className="dish-cards-container">

@@ -1,12 +1,11 @@
-* {
+*,
+::before,
+::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  width: 100%;
-  font-size: 16px;
-}
+
 img {
   display: block; /* removes the white space beneath images*/
 }
@@ -39,23 +38,10 @@ li {
 
 a,
 .doormat-nav-link {
+  color: #000000;
   text-decoration: none;
-  color: blue;
-
-  /* Phones*/
-  @media (max-width: 600px) {
-    font-size: 0.8rem;
-  }
-
-  /*Tablets*/
-  @media (min-width: 600.1px) {
-    font-size: 0.9rem;
-  }
-
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
-    font-size: 0.9rem;
-  }
+  font-size: 0.8rem;
+  transition: color 150ms;
 }
 a:hover {
   cursor: pointer;
@@ -63,43 +49,41 @@ a:hover {
 }
 
 .footer-container {
-  background-color: rgb(14, 13, 13);
-  color: rgb(0, 0, 0);
+  background-color: rgb(199, 199, 199);
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.4rem 2rem 1.4rem;
 
-  /* Phones*/
-  @media (max-width: 600px) {
-    padding: 40px 20px 10px 50px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 15px;
+  /*small*/
+  @media (min-width: 576px) {
+    padding-inline: 4rem;
   }
 
-  /*Tablets*/
-  @media (min-width: 600.1px) {
-    padding: 50px 40px;
+  /*medium*/
+  @media (min-width: 768px) {
+    padding-inline: 5rem;
   }
-  /* Laptops and Desktops*/
-  @media (min-width: 1000px) {
-    padding: 50px 100px;
+
+  /*large*/
+  @media (min-width: 992px) {
+    padding-inline: 7rem;
+  }
+
+  /*extra large*/
+  @media (min-width: 1200px) {
+    padding-inline: 9rem;
+  }
+
+  /*extra extra large*/
+  @media (min-width: 1400px) {
+    padding-inline: 10rem;
   }
 }
-
 .footer-logo-container {
-  width: 20%;
-
-  /* Phones*/
-  @media (max-width: 600px) {
-    width: 40%;
-    max-width: 150px;
-    height: auto;
-  }
+  max-width: 5vw;
+  align-self: center;
 }
-
 .footer-logo-container img {
   width: 100%;
-  border-radius: 5px;
 }
