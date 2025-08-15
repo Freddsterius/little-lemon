@@ -83,7 +83,13 @@ a:hover {
 .footer-logo-container {
   max-width: 15vw;
   align-self: center;
+
+  /*large and beyond*/
+  @media (min-width: 992px) {
+    max-width: 8vw;
+  }
 }
+
 .footer-logo-container img {
   width: 100%;
 }
