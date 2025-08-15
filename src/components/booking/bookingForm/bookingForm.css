@@ -17,6 +17,7 @@ select {
   padding: 0.5rem;
   border-radius: 5px;
   width: 80vw;
+  border: none;
 }
 .boooking-form label {
   color: white;

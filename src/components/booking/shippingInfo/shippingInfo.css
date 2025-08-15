@@ -46,6 +46,7 @@
   padding: 0.5rem;
   border-radius: 5px;
   width: 80vw;
+  border: none;
 }
 .shipping-info-form label {
   color: white;
@@ -67,4 +68,24 @@
 .shipping-info-form .book-btn:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+.shipping-info-form p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.card {
+}
+.card-details {
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.card-details input {
+  width: 30vw;
+}
+.name-field::placeholder::first-letter {
+  color: red;
 }

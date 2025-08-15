@@ -60,12 +60,16 @@ textarea {
   padding: 0.5rem;
   border-radius: 5px;
   width: 80vw;
+  border: none;
 }
 .login-form label {
   color: white;
   font-family: karla;
 }
-
+.login-form p {
+  color: white;
+  font-size: 0.8rem;
+}
 .login-btn {
   color: rgb(255, 255, 255);
   background-color: #000000;
@@ -77,8 +81,6 @@ textarea {
   white-space: nowrap;
   justify-self: center;
   transition: opacity 200ms;
-  position: absolute;
-  bottom: 1rem;
 }
 .login-btn:hover {
   cursor: pointer;

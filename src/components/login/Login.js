@@ -14,11 +14,39 @@ const Login = () => {
       </section>
       <form onSubmit={handleSubmit} className="login-form">
         <h3 className="form-title">Sign in to collect points</h3>
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
-        <input type="text" placeholder="Phone Number" />
-        <input type="text" placeholder="Email" />
-        <input type="password" placeholder="Password" />
+        <div>
+          <input type="text" placeholder="* First Name" required />
+          <p>First name is required</p>
+        </div>
+
+        <div>
+          <input type="text" placeholder="* Last Name" required />
+          <p>Last name is required</p>
+        </div>
+
+        <div>
+          <input type="text" placeholder="Phone Number (optional)" />
+        </div>
+
+        <div>
+          <input type="text" placeholder="* Email" required />
+          <p>Email is required</p>
+        </div>
+
+        <div>
+          <input type="password" placeholder="* Create a password" required />
+          <p>Password is required (6 characters at least)</p>
+        </div>
+
+        <div>
+          <input
+            type="password"
+            placeholder="* Confirm the password"
+            required
+          />
+          <p>To confirm the password is required</p>
+        </div>
+
         <textarea
           rows={5}
           placeholder="Add a special request (optional)"

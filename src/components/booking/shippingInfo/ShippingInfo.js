@@ -19,21 +19,62 @@ const ShippingInfo = () => {
 
       <form className="shipping-info-form">
         <h2 className="form-title">Booking Details</h2>
-        <input type="text" placeholder="Date - Time - Number of Dinners" />
-        <input type="text" placeholder="First Name/Last Name" />
-        <input type="text" placeholder="Card Number" />
-        <input type="text" placeholder="MM/YYYY" />
-        <input type="text" placeholder="CVV" />
-        <input type="text" placeholder="Billing Adrress" />
-        <input type="text" placeholder="Country/Region" />
-        <label>
-          Send me booking confirmatio via text
-          <input type="radio" />
-        </label>
-        <label>
-          Send me booking confirmation via email
-          <input type="radio" />
-        </label>
+        <div>
+          <select placeholder="Date - Time - Number of Dinners">
+            <option>Date - Time - Number of Dinners</option>
+          </select>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            placeholder="* First Name/Last Name"
+            className="name-field"
+            required
+          />
+          <p>Name is required</p>
+        </div>
+
+        <div className="card">
+          <input type="text" placeholder="* Card Number" required />
+          <p>Card number is required</p>
+          <div className="card-details">
+            <div>
+              <input
+                type="text"
+                placeholder="* MM/YYYY"
+                className="mm"
+                required
+              />
+              <p>MM/YYYY is required</p>
+            </div>
+            <div>
+              <input type="text" placeholder="* CVV" required />
+              <p>CVV is required</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <input type="text" placeholder="* Billing Adrress" required />
+        </div>
+
+        <div>
+          <input type="text" placeholder="* Country/Region" required />
+          <p>Country/Region is required</p>
+        </div>
+
+        <div>
+          <label>
+            Send me booking confirmatio via text
+            <input type="radio" />
+          </label>
+          <label>
+            Send me booking confirmation via email
+            <input type="radio" />
+          </label>
+        </div>
+
         <button type="submit" onClick={handleClick} className="book-btn">
           Book
         </button>

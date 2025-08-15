@@ -11,7 +11,6 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
   const onDateChange = (e) => {
     const selected = e.target.value;
     setDate(selected);
-    // Propagates the change up to `Main` via the handler
     handleDateChange(selected);
   };
 
