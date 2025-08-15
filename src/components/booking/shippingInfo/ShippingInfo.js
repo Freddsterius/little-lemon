@@ -66,7 +66,7 @@ const ShippingInfo = () => {
 
         <div>
           <label>
-            Send me booking confirmatio via text
+            Send me booking confirmation via text
             <input type="radio" />
           </label>
           <label>
