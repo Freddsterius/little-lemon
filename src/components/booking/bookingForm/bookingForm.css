@@ -23,6 +23,10 @@ select {
   color: white;
   font-family: karla;
 }
+input[type="radio"] {
+  vertical-align: middle;
+  margin-top: -2.5rem;
+}
 
 .boooking-form .res-btn {
   color: rgb(0, 0, 0);

@@ -58,7 +58,7 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
 
         <label>Seating options:</label>
         <div>
-          <label htmlFor="standard">
+          <label htmlFor="standard" className="radio-option">
             Standard
             <input
               type="radio"
@@ -71,7 +71,7 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
           </label>
         </div>
 
-        <label htmlFor="outside">
+        <label htmlFor="outside" className="radio-option">
           Outside
           <input
             type="radio"
