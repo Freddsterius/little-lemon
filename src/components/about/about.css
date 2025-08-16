@@ -169,21 +169,45 @@ p {
   width: 300px;
   height: 450px;
   margin: auto;
+
+  /*large and beyond*/
+  @media (min-width: 992px) {
+    transform: translateY(2rem);
+  }
 }
 .about-images-container img {
   position: absolute;
-  height: 300px;
+  height: 240px;
   border-radius: 10px;
-  width: 220px;
+  width: 180px;
+
+  /*large and beyond*/
+  @media (min-width: 992px) {
+    height: 300px;
+    width: 220px;
+  }
 }
+
 .right-img {
   top: -5rem;
-  right: -1.5rem;
+  right: 1.5rem;
   z-index: 2;
+
+  /*large and beyond*/
+  @media (min-width: 992px) {
+    top: -5rem;
+    right: -1.5rem;
+  }
 }
 
 .left-img {
   top: 7rem;
-  left: -1.5rem;
+  left: 1rem;
   z-index: 1;
+
+  /*large and beyond*/
+  @media (min-width: 992px) {
+    top: 7rem;
+    left: -1.5rem;
+  }
 }

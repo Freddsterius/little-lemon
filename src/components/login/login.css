@@ -29,7 +29,7 @@
 
 .login-container {
   /* background-color: #014701; */
-  background-color: #32adff;
+  background-color: #7a9bb1;
   margin: 0 1rem 0.5rem 1rem;
   padding-inline: 1.4rem;
   display: flex;
@@ -72,8 +72,8 @@ textarea {
   font-size: 0.8rem;
 }
 .login-btn {
-  color: rgb(255, 255, 255);
-  background-color: #000000;
+  color: rgb(0, 0, 0);
+  background-color: #f4ce14;
   padding: 0.5em;
   border-radius: 5px;
   border: none;

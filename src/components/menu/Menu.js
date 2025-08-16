@@ -9,7 +9,7 @@ const Menu = () => {
     <div className="menu-menu-container">
       <h4>Menu</h4>
       <div className="menu-dish-cards-container">
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={greekSalad} alt="a delicious greek salad" />
           <div className="dish-price-container">
             <p className="dish-name">Greek Salad </p>{" "}
@@ -23,7 +23,7 @@ const Menu = () => {
           <button className="delivery-btn">Order a delivery 🚘</button>
         </div>
 
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={bruchetta} alt="a delicious bruschetta" />
           <div className="dish-price-container">
             <p className="dish-name">Bruschetta</p>{" "}
@@ -36,7 +36,7 @@ const Menu = () => {
           <button className="delivery-btn">Order a delivery 🚘</button>
         </div>
 
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={lemeonDessert} alt="a delicious lemon dessert" />
           <div className="dish-price-container">
             <p className="dish-name">Lemon Dessert</p>{" "}
@@ -49,7 +49,7 @@ const Menu = () => {
           <button className="delivery-btn">Order a delivery 🚘</button>
         </div>
 
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={greekSalad} alt="a delicious greek salad" />
           <div className="dish-price-container">
             <p className="dish-name">Greek Salad </p>{" "}
@@ -63,7 +63,7 @@ const Menu = () => {
           <button className="delivery-btn">Order a delivery 🚘</button>
         </div>
 
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={bruchetta} alt="a delicious bruschetta" />
           <div className="dish-price-container">
             <p className="dish-name">Bruschetta</p>{" "}
@@ -76,7 +76,7 @@ const Menu = () => {
           <button className="delivery-btn">Order a delivery 🚘</button>
         </div>
 
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={lemeonDessert} alt="a delicious lemon dessert" />
           <div className="dish-price-container">
             <p className="dish-name">Lemon Dessert</p>{" "}
@@ -89,7 +89,7 @@ const Menu = () => {
           <button className="delivery-btn">Order a delivery 🚘</button>
         </div>
 
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={greekSalad} alt="a delicious greek salad" />
           <div className="dish-price-container">
             <p className="dish-name">Greek Salad </p>{" "}
@@ -103,7 +103,7 @@ const Menu = () => {
           <button className="delivery-btn">Order a delivery 🚘</button>
         </div>
 
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={bruchetta} alt="a delicious bruschetta" />
           <div className="dish-price-container">
             <p className="dish-name">Bruschetta</p>{" "}
@@ -116,7 +116,7 @@ const Menu = () => {
           <button className="delivery-btn">Order a delivery 🚘</button>
         </div>
 
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={lemeonDessert} alt="a delicious lemon dessert" />
           <div className="dish-price-container">
             <p className="dish-name">Lemon Dessert</p>{" "}
@@ -129,7 +129,7 @@ const Menu = () => {
           <button className="delivery-btn">Order a delivery 🚘</button>
         </div>
 
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={greekSalad} alt="a delicious greek salad" />
           <div className="dish-price-container">
             <p className="dish-name">Greek Salad </p>{" "}
@@ -143,7 +143,7 @@ const Menu = () => {
           <button className="delivery-btn">Order a delivery 🚘</button>
         </div>
 
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={bruchetta} alt="a delicious bruschetta" />
           <div className="dish-price-container">
             <p className="dish-name">Bruschetta</p>{" "}
@@ -156,7 +156,7 @@ const Menu = () => {
           <button className="delivery-btn">Order a delivery 🚘</button>
         </div>
 
-        <div className="dish-card">
+        <div className="menu-dish-card">
           <img src={lemeonDessert} alt="a delicious lemon dessert" />
           <div className="dish-price-container">
             <p className="dish-name">Lemon Dessert</p>{" "}
