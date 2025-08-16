@@ -67,9 +67,8 @@ textarea {
   color: white;
   font-family: karla;
 }
-.login-form p {
+.login-form small {
   color: white;
-  font-size: 0.8rem;
 }
 .login-btn {
   color: rgb(0, 0, 0);

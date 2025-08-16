@@ -20,7 +20,10 @@ const ShippingInfo = () => {
       <form className="shipping-info-form">
         <h2 className="form-title">Booking Details</h2>
         <div>
-          <select placeholder="Date - Time - Number of Dinners">
+          <select
+            placeholder="Date - Time - Number of Dinners"
+            aria-label="Date - Time - Number of Dinners"
+          >
             <option>Date - Time - Number of Dinners</option>
           </select>
         </div>
@@ -29,39 +32,59 @@ const ShippingInfo = () => {
           <input
             type="text"
             placeholder="* First Name/Last Name"
-            className="name-field"
+            aria-label="Name"
             required
           />
-          <p>Name is required</p>
+          <small>Name is required</small>
         </div>
 
         <div className="card">
-          <input type="text" placeholder="* Card Number" required />
-          <p>Card number is required</p>
+          <input
+            type="text"
+            placeholder="* Card Number"
+            aria-label="Card Number"
+            required
+          />
+          <small>Card number is required</small>
           <div className="card-details">
             <div>
               <input
                 type="text"
                 placeholder="* MM/YYYY"
-                className="mm"
+                aria-label="MM/YYYY"
                 required
               />
               <p>MM/YYYY is required</p>
             </div>
             <div>
-              <input type="text" placeholder="* CVV" required />
+              <input
+                type="text"
+                placeholder="* CVV"
+                aria-label="CVV"
+                required
+              />
               <p>CVV is required</p>
             </div>
           </div>
         </div>
 
         <div>
-          <input type="text" placeholder="* Billing Adrress" required />
+          <input
+            type="text"
+            placeholder="* Billing Adrress"
+            aria-label="Billing Adrress"
+            required
+          />
         </div>
 
         <div>
-          <input type="text" placeholder="* Country/Region" required />
-          <p>Country/Region is required</p>
+          <input
+            type="text"
+            placeholder="* Country/Region"
+            aria-label="Country/Region"
+            required
+          />
+          <small>Country/Region is required</small>
         </div>
 
         <div>
@@ -75,7 +98,12 @@ const ShippingInfo = () => {
           </label>
         </div>
 
-        <button type="submit" onClick={handleClick} className="book-btn">
+        <button
+          type="submit"
+          onClick={handleClick}
+          className="book-btn"
+          aria-label="Submit Form"
+        >
           Book
         </button>
       </form>

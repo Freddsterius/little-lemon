@@ -15,43 +15,75 @@ const Login = () => {
       <form onSubmit={handleSubmit} className="login-form">
         <h3 className="form-title">Sign in to collect points</h3>
         <div>
-          <input type="text" placeholder="* First Name" required />
-          <p>First name is required</p>
+          <input
+            type="text"
+            placeholder="* First Name"
+            aria-label="First Name"
+            required
+          />
+          <small>First name is required</small>
         </div>
 
         <div>
-          <input type="text" placeholder="* Last Name" required />
-          <p>Last name is required</p>
+          <input
+            type="text"
+            placeholder="* Last Name"
+            aria-label="Last Name"
+            required
+          />
+          <small>Last name is required</small>
         </div>
 
         <div>
-          <input type="text" placeholder="Phone Number (optional)" />
+          <input
+            type="text"
+            placeholder="Phone Number (optional)"
+            aria-label="Phone Number"
+          />
         </div>
 
         <div>
-          <input type="text" placeholder="* Email" required />
-          <p>Email is required</p>
+          <input
+            type="text"
+            placeholder="* Email"
+            aria-label="Email"
+            required
+          />
+          <small>Email is required</small>
         </div>
 
         <div>
-          <input type="password" placeholder="* Create a password" required />
-          <p>Password is required (6 characters at least)</p>
+          <input
+            type="password"
+            placeholder="* Create a password"
+            aria-label="Password"
+            required
+          />
+          <small>Password is required (6 characters at least)</small>
         </div>
 
         <div>
           <input
             type="password"
             placeholder="* Confirm the password"
+            aria-label="Password"
             required
           />
-          <p>To confirm the password is required</p>
+          <small>To confirm the password is required</small>
         </div>
 
         <textarea
           rows={5}
           placeholder="Add a special request (optional)"
+          aria-label="Special Request"
         ></textarea>
-        <button type="submit" className="login-btn" disabled={true}>
+
+        <button
+          type="submit"
+          className="login-btn"
+          aria-label="Submit Form"
+          disabled={true}
+        >
           Create an Account
         </button>
       </form>

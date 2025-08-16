@@ -17,16 +17,19 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
   return (
     <>
       <form onSubmit={submitForm} className="boooking-form">
-        <label htmlFor="res-date">Choose date:</label>
+        <label htmlFor="res-date" aria-label="Date">
+          Choose date:
+        </label>
         <input type="date" id="res-date" value={date} onChange={onDateChange} />
 
-        <label htmlFor="res-time">Choose time:</label>
+        <label htmlFor="res-time" aria-label="Time">
+          Choose time:
+        </label>
         <select
           id="res-time"
           value={time}
           onChange={(e) => setTime(e.target.value)}
         >
-          {/* Render availableTimes from props */}
           {availableTimes.map((time) => (
             <option key={time} value={time}>
               {time}
@@ -34,7 +37,9 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
           ))}
         </select>
 
-        <label htmlFor="guests">Number of guests:</label>
+        <label htmlFor="guests" aria-label="Guests">
+          Number of guests:
+        </label>
         <input
           type="number"
           id="guests"
@@ -44,7 +49,9 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
           onChange={(e) => setGuests(e.target.value)}
         />
 
-        <label htmlFor="occasion">Occasion:</label>
+        <label htmlFor="occasion" aria-label="Occasion">
+          Occasion:
+        </label>
         <select
           id="occasion"
           value={occasion}
@@ -58,7 +65,7 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
 
         <label>Seating options:</label>
         <div>
-          <label htmlFor="standard" className="radio-option">
+          <label htmlFor="standard" aria-label="Standard">
             Standard
             <input
               type="radio"
@@ -69,21 +76,21 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
               onChange={(e) => setSeatingOption(e.target.value)}
             />
           </label>
+
+          <label htmlFor="outside" aria-label="Outside">
+            Outside
+            <input
+              type="radio"
+              id="outside"
+              name="seatingOption"
+              value="Outside"
+              checked={seatingOption === "Outside"}
+              onChange={(e) => setSeatingOption(e.target.value)}
+            />
+          </label>
         </div>
 
-        <label htmlFor="outside" className="radio-option">
-          Outside
-          <input
-            type="radio"
-            id="outside"
-            name="seatingOption"
-            value="Outside"
-            checked={seatingOption === "Outside"}
-            onChange={(e) => setSeatingOption(e.target.value)}
-          />
-        </label>
-
-        <button type="submit" className="res-btn">
+        <button type="submit" className="res-btn" aria-label="Submit Form">
           Make a Reservation
         </button>
       </form>

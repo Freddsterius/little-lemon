@@ -70,6 +70,9 @@
   opacity: 0.5;
 }
 
+.shipping-info-form small {
+  color: white;
+}
 .shipping-info-form p {
   color: white;
   font-size: 0.8rem;

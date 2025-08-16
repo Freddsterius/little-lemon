@@ -10,30 +10,37 @@ const Nav = () => {
         className={({ isActive }) =>
           isActive ? "navbar-link active" : "navbar-link"
         }
+        aria-label="Open Home"
       >
         Home
       </NavLink>
+
       <NavLink
         to="/highlights"
         className={({ isActive }) =>
           isActive ? "navbar-link active" : "navbar-link"
         }
+        aria-label="Open Highlights"
       >
         Highlights
       </NavLink>
+
       <NavLink
         to="/testimonials"
         className={({ isActive }) =>
           isActive ? "navbar-link active" : "navbar-link"
         }
+        aria-label="Open Testimonials"
       >
         Testimonials
       </NavLink>
+
       <NavLink
         to="/about"
         className={({ isActive }) =>
           isActive ? "navbar-link active" : "navbar-link"
         }
+        aria-label="Open About"
       >
         About
       </NavLink>
@@ -43,6 +50,7 @@ const Nav = () => {
         className={({ isActive }) =>
           isActive ? "navbar-link active" : "navbar-link"
         }
+        aria-label="Open Menu"
       >
         Menu
       </NavLink>
@@ -52,6 +60,7 @@ const Nav = () => {
         className={({ isActive }) =>
           isActive ? "navbar-link active" : "navbar-link"
         }
+        aria-label="Open Reservation"
       >
         Reservations
       </NavLink>
@@ -61,6 +70,7 @@ const Nav = () => {
         className={({ isActive }) =>
           isActive ? "navbar-link active" : "navbar-link"
         }
+        aria-label="Open Login"
       >
         Login
       </NavLink>
