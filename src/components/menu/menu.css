@@ -135,19 +135,19 @@ button {
   object-fit: cover;
 }
 
-.dish-card .dish-price-container {
+.menu-dish-card .dish-price-container {
   padding: 1rem;
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.dish-card .dish-name {
+.menu-dish-card .dish-name {
   color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: bold;
 }
-.dish-card .price {
+.menu-dish-card .price {
   color: orange;
   font-size: 1rem;
   position: absolute;
