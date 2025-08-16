@@ -14,7 +14,9 @@ const Hero = () => {
           recipes served with a modern twist.
         </p>
         <Link to="/booking">
-          <button className="reserve-btn">Reserve a Table</button>
+          <button className="reserve-btn" aria-label="Open Booking">
+            Reserve a Table
+          </button>
         </Link>
       </div>
 

@@ -11,7 +11,7 @@ const Highlights = () => {
       <div className="title-button-container">
         <h2>This weeks specials!</h2>
         <Link to="/menu">
-          <button>Online Menu</button>
+          <button aria-label="Open Menu">Online Menu</button>
         </Link>
       </div>
 
