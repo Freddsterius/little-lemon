@@ -5,9 +5,11 @@
   margin: 0px;
   box-sizing: border-box;
 }
+img {
+  display: block;
+}
 
 .header-container {
-  /* mobile 1st or extra small  */
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -56,7 +58,6 @@
 }
 
 .logo-container img {
-  /* mobile 1st or extra small */
   max-width: 100%;
   height: auto;
   display: inline-block;

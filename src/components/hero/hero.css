@@ -7,7 +7,7 @@ body {
   width: 100%;
 }
 img {
-  display: block; /* removes the white space beneath images*/
+  display: block;
 }
 
 h1,
@@ -23,7 +23,6 @@ button:hover {
 }
 
 .hero-container {
-  /* mobile 1st or extra small  */
   background-color: #495e57;
   display: flex;
   justify-content: space-between;
@@ -67,7 +66,6 @@ button:hover {
   flex: 3;
 }
 .hero-text-container h1 {
-  /* mobile 1st or extra small  */
   font-size: 1.7rem;
   color: #f4ce14;
 
@@ -97,7 +95,6 @@ button:hover {
   }
 }
 .hero-text-container h2 {
-  /* mobile 1st or extra small  */
   font-size: 1.3rem;
   color: #ffffff;
 
@@ -127,7 +124,6 @@ button:hover {
   }
 }
 .hero-text-container p {
-  /* mobile 1st or extra small  */
   font-size: 1rem;
   color: #ffffff;
   line-height: 1.3rem;
@@ -163,7 +159,6 @@ button:hover {
   }
 }
 .reserve-btn {
-  /* mobile 1st or extra small  */
   background-color: rgb(244, 207, 21);
   color: #000000;
   font-weight: bold;
@@ -204,13 +199,11 @@ button:hover {
 }
 
 .hero-image-container {
-  /* mobile 1st or extra small  */
   flex: 2;
   display: flex;
   position: relative;
 }
 .hero-image-container img {
-  /* mobile 1st or extra small  */
   max-width: 90%;
   height: auto;
   border-radius: 10px;

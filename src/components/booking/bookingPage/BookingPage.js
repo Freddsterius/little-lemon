@@ -20,23 +20,6 @@ const BookingPage = ({ availableTimes = [], handleDateChange, submitForm }) => {
         </div>
       </div>
 
-      {/*
-      <div className="native-content-container">
-        <section className="little-lemon">
-          <h1>Little Lemon</h1>
-          <h2>Chicago</h2>
-        </section>
-
-        <section className="any-occasion">
-          <h3>Find a table for any occasion</h3>
-
-          <div className="any-occasion-images">
-            <img src={photo1} alt="" />
-            <img src={photo2} alt="" />
-          </div>
-        </section>
-      </div> */}
-
       <BookingForm
         availableTimes={availableTimes}
         handleDateChange={handleDateChange}

@@ -5,9 +5,6 @@
   margin: 0px;
   box-sizing: border-box;
 }
-img {
-  display: block;
-}
 
 .navbar-container {
   /* mobile 1st or extra small  */

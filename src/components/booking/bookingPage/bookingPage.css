@@ -1,11 +1,14 @@
-* {
-  padding: 0;
-  margin: 0;
+*,
+::before,
+::after {
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
-body {
-  width: 100%;
+img {
+  display: block;
 }
+
 .booking-page {
   background-color: #014701;
   margin: 0 1rem 0.5rem 1rem;
@@ -15,50 +18,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-/* .little-lemon {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  padding-top: 1rem;
-  font-family: karla;
-}
-.little-lemon h1 {
-  display: flex;
-  align-self: flex-start;
-  color: #f4ce14;
-  font-size: 2rem;
-}
-.little-lemon h2 {
-  display: flex;
-  align-self: flex-start;
-  color: white;
-  font-size: 1.5rem;
-}
-
-.any-occasion {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-.any-occasion h3 {
-  padding-top: 1.8rem;
-  font-family: karla;
-  color: white;
-}
-
-.any-occasion-images {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin: auto;
-  padding: 1.8rem 1.3rem;
-}
-.any-occasion-images img {
-  max-width: 30%;
-  margin-inline: 0.6rem;
-  border-radius: 7px;
-} */
 
 .little-lemon-container {
   display: flex;

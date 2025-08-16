@@ -7,7 +7,7 @@
 }
 
 img {
-  display: block; /* removes the white space beneath images*/
+  display: block;
 }
 
 h2 {
@@ -130,7 +130,7 @@ button {
 }
 
 .menu-dish-card img {
-  width: 100%; /* Make image take full width */
+  width: 100%;
   height: auto;
   object-fit: cover;
 }

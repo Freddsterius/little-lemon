@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 img {
-  display: block; /* removes the white space beneath images*/
+  display: block;
 }
 
 h1,
