@@ -1,66 +1,77 @@
-*,
-::before,
-::after {
-  padding: 0px;
-  margin: 0px;
+.confirmed-container {
+  min-height: 50vh;
+  width: 100vw;
+  background-image: url("../../../assets/hero/restauranfood.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
 }
+
 .last-little-lemon {
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
   padding-top: 1rem;
-  font-family: karla;
-  position: absolute;
-  top: 1rem;
-  left: 2rem;
+  align-self: flex-start;
+  margin-left: 1.299rem;
 }
 .last-little-lemon h1 {
-  display: flex;
-  align-self: flex-start;
   color: #f4ce14;
   font-size: 2rem;
 }
 .last-little-lemon h2 {
-  display: flex;
-  align-self: flex-start;
   color: white;
   font-size: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.all-container {
-  background-color: #014701;
-  margin: 0 1rem 0.5rem 1rem;
-  padding-inline: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 90vh;
-  position: relative;
+.confirmation-text-container {
+  background-color: rgba(7, 90, 1, 1);
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.5);
+  padding: 40px 30px;
+  width: 80vw;
+  max-width: 600px;
+  margin: 5rem 0 11rem 0;
 }
-.text-container {
-  background-color: rgb(255, 255, 255);
-  padding-inline: 2rem;
-  line-height: 2rem;
-  margin-top: 5rem;
-  min-height: 30vh;
+.confirmation-text-container h2 {
+  margin: 0;
+  color: rgb(33, 201, 61);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
 }
-
+.confirmation-text-container p {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.confirmation-text-container :last-child {
+  margin-top: 2rem;
+}
 .back-btn {
-  color: rgb(255, 255, 255);
-  background-color: #000000;
-  padding: 0.5em;
-  border-radius: 5px;
-  border: none;
-  width: 10rem;
-  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+  background-color: #f4ce14;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 150ms;
   white-space: nowrap;
   justify-self: center;
-  transition: opacity 200ms;
+  transition: background-color 150ms;
   position: absolute;
   bottom: 1rem;
 }
 .back-btn:hover {
-  cursor: pointer;
-  opacity: 0.5;
+  background-color: #14daf4;
 }

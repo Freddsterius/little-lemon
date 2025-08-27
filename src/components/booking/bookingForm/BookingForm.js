@@ -15,58 +15,76 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
   };
 
   return (
-    <>
+    <div className="boooking-form-container">
+      <h3>Book a table</h3>
       <form onSubmit={submitForm} className="boooking-form">
-        <label htmlFor="res-date" aria-label="Date">
-          Choose date:
-        </label>
-        <input type="date" id="res-date" value={date} onChange={onDateChange} />
+        <div className="boooking-form-input-group">
+          <label htmlFor="res-date" aria-label="Date">
+            Choose date:
+          </label>
+          <input
+            type="date"
+            id="res-date"
+            value={date}
+            onChange={onDateChange}
+          />
+        </div>
 
-        <label htmlFor="res-time" aria-label="Time">
-          Choose time:
-        </label>
-        <select
-          id="res-time"
-          value={time}
-          onChange={(e) => setTime(e.target.value)}
-        >
-          {availableTimes.map((time) => (
-            <option key={time} value={time}>
-              {time}
-            </option>
-          ))}
-        </select>
+        <div className="boooking-form-input-group">
+          <label htmlFor="res-time" aria-label="Time">
+            Choose time:
+          </label>
+          <select
+            id="res-time"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+          >
+            {availableTimes.map((time) => (
+              <option key={time} value={time}>
+                {time}
+              </option>
+            ))}
+          </select>
+        </div>
 
-        <label htmlFor="guests" aria-label="Guests">
-          Number of guests:
-        </label>
-        <input
-          type="number"
-          id="guests"
-          min="1"
-          max="10"
-          value={guests}
-          onChange={(e) => setGuests(e.target.value)}
-        />
+        <div className="boooking-form-input-group">
+          {" "}
+          <label htmlFor="guests" aria-label="Guests">
+            Number of guests:
+          </label>
+          <input
+            type="number"
+            id="guests"
+            min="1"
+            max="10"
+            value={guests}
+            onChange={(e) => setGuests(e.target.value)}
+          />
+        </div>
 
-        <label htmlFor="occasion" aria-label="Occasion">
-          Occasion:
-        </label>
-        <select
-          id="occasion"
-          value={occasion}
-          onChange={(e) => setOccasion(e.target.value)}
-        >
-          <option value="Birthday">Birthday</option>
-          <option value="Engagement">Engagement</option>
-          <option value="Anniversary">Anniversary</option>
-          <option value="Holiday">Holiday</option>
-        </select>
+        <div className="boooking-form-input-group">
+          <label htmlFor="occasion" aria-label="Occasion">
+            Occasion:
+          </label>
+          <select
+            id="occasion"
+            value={occasion}
+            onChange={(e) => setOccasion(e.target.value)}
+          >
+            <option value="Birthday">Birthday</option>
+            <option value="Engagement">Engagement</option>
+            <option value="Anniversary">Anniversary</option>
+            <option value="Holiday">Holiday</option>
+          </select>
+        </div>
 
-        <label>Seating options:</label>
-        <div>
-          <label htmlFor="standard" aria-label="Standard">
-            Standard
+        <div className="boooking-form-input-group">
+          <label className="options-label">Seating options:</label>
+
+          <div className="standard">
+            <label htmlFor="standard" aria-label="Standard">
+              Standard
+            </label>
             <input
               type="radio"
               id="standard"
@@ -75,10 +93,12 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
               checked={seatingOption === "Standard"}
               onChange={(e) => setSeatingOption(e.target.value)}
             />
-          </label>
+          </div>
 
-          <label htmlFor="outside" aria-label="Outside">
-            Outside
+          <div className="outside">
+            <label htmlFor="outside" aria-label="Outside">
+              Outside
+            </label>
             <input
               type="radio"
               id="outside"
@@ -87,14 +107,14 @@ const BookingForm = ({ availableTimes = [], handleDateChange, submitForm }) => {
               checked={seatingOption === "Outside"}
               onChange={(e) => setSeatingOption(e.target.value)}
             />
-          </label>
+          </div>
         </div>
 
         <button type="submit" className="res-btn" aria-label="Submit Form">
           Make a Reservation
         </button>
       </form>
-    </>
+    </div>
   );
 };
 export default BookingForm;

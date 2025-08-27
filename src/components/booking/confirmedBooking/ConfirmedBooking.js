@@ -10,20 +10,22 @@ const ConfirmedBooking = () => {
     navigate("/");
   };
   return (
-    <div className="all-container">
+    <div className="confirmed-container">
       <section className="last-little-lemon">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
       </section>
-      <div className="text-container">
+
+      <div className="confirmation-text-container">
         <h2>Success!</h2>
         <p>
-          Congratulation, <strong>user</strong>!<br />
-          You successfully booked a table at <em>LITTLE LEMON</em>.
+          Congratulation, USER! You successfully booked a table at{" "}
+          <em>LITTLE LEMON</em>. Please check your inbox/email for the booking
+          confirmation details.
         </p>
-        <p>Check your inbox/email for the booking Confirmation details.</p>
         <p>Thank you for choosing us!</p>
       </div>
+
       <button type="submit" onClick={handleClick} className="back-btn">
         Go Back to HOME
       </button>

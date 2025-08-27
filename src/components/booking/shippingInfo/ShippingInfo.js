@@ -5,108 +5,136 @@ import "./shippingInfo.css";
 const ShippingInfo = () => {
   const navigate = useNavigate();
 
-  const handleClick = (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     navigate("/confirmed");
   };
 
   return (
-    <div className="master-container">
+    <div className="shipping-info-full-sreen-container">
       <section className="little-lemon">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
       </section>
 
-      <form className="shipping-info-form">
+      <div className="shipping-info-form-container">
         <h2 className="form-title">Booking Details</h2>
-        <div>
-          <select
-            placeholder="Date - Time - Number of Dinners"
-            aria-label="Date - Time - Number of Dinners"
-          >
-            <option>Date - Time - Number of Dinners</option>
-          </select>
-        </div>
+        <form onSubmit={handleSubmit} className="shipping-info-form">
+          <div className="shipping-info-form-input-group">
+            <select
+              placeholder="Date - Time - Number of Dinners"
+              aria-label="Date - Time - Number of Dinners"
+            >
+              <option>Date - Time - Number of Dinners</option>
+            </select>
+          </div>
 
-        <div>
-          <input
-            type="text"
-            placeholder="* First Name/Last Name"
-            aria-label="Name"
-            required
-          />
-          <small>Name is required</small>
-        </div>
+          <div className="shipping-info-form-input-group">
+            <label htmlFor="name">* First Name/Last Name</label>
+            <input
+              type="text"
+              placeholder="First Name/Last Name..."
+              name="name"
+              id="name"
+              aria-label="Name"
+              /*required*/
+            />
+          </div>
 
-        <div className="card">
-          <input
-            type="text"
-            placeholder="* Card Number"
-            aria-label="Card Number"
-            required
-          />
-          <small>Card number is required</small>
-          <div className="card-details">
-            <div>
-              <input
-                type="text"
-                placeholder="* MM/YYYY"
-                aria-label="MM/YYYY"
-                required
-              />
-              <p>MM/YYYY is required</p>
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="* CVV"
-                aria-label="CVV"
-                required
-              />
-              <p>CVV is required</p>
+          <div className="shipping-info-form-input-group ">
+            <label htmlFor="card-number">* Card Number...</label>
+            <input
+              type="text"
+              placeholder="Card Number"
+              name="card-number"
+              id="card-number"
+              aria-label="Card Number"
+              /*required*/
+            />
+
+            <div className="card-details">
+              <div>
+                <label htmlFor="card-exp-date">* Card Expiration Date</label>
+                <input
+                  type="text"
+                  aria-label="MM/YYYY"
+                  placeholder="MM/YYYY"
+                  name="card-exp-date"
+                  id="card-exp-date"
+                  /*required*/
+                />
+              </div>
+
+              <div>
+                <label htmlFor="card-cvv">* CVV</label>
+                <input
+                  type="text"
+                  placeholder="CVV"
+                  name="card-cvv"
+                  id="card-cvv"
+                  aria-label="CVV"
+                  /*required*/
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div>
-          <input
-            type="text"
-            placeholder="* Billing Adrress"
-            aria-label="Billing Adrress"
-            required
-          />
-        </div>
+          <div className="shipping-info-form-input-group">
+            <label htmlFor="billing-adrress">* Billing Adrress</label>
+            <input
+              type="text"
+              placeholder="Billing Adrress..."
+              id="billing-adrress"
+              name="billing-adrress"
+              aria-label="Billing Adrress"
+              /*required*/
+            />
+          </div>
 
-        <div>
-          <input
-            type="text"
-            placeholder="* Country/Region"
-            aria-label="Country/Region"
-            required
-          />
-          <small>Country/Region is required</small>
-        </div>
+          <div className="shipping-info-form-input-group">
+            <label htmlFor="billing-adrress">* Country/Region</label>
+            <input
+              type="text"
+              placeholder="Country/Region"
+              id="country-region"
+              name="country-region"
+              aria-label="Country/Region"
+              /*required*/
+            />
+          </div>
 
-        <div>
-          <label>
-            Send me booking confirmation via text
-            <input type="radio" />
-          </label>
-          <label>
-            Send me booking confirmation via email
-            <input type="radio" />
-          </label>
-        </div>
+          <div className="shipping-info-form-input-group">
+            <div className="conf-text">
+              <label htmlFor="via-text">
+                Send me booking confirmation via text
+              </label>
+              <input
+                type="radio"
+                id="via-text"
+                name="confirmation-preference"
+              />
+            </div>
 
-        <button
-          type="submit"
-          onClick={handleClick}
-          className="book-btn"
-          aria-label="Submit Form"
-        >
-          Book
-        </button>
-      </form>
+            <div className="conf-email">
+              <label htmlFor="via-email">
+                Send me booking confirmation via email
+              </label>
+              <input
+                type="radio"
+                id="via-email"
+                name="confirmation-preference"
+                checked
+              />
+            </div>
+          </div>
+
+          <button type="submit" className="book-btn" aria-label="Submit Form">
+            Book
+          </button>
+
+          <p className="note"> Note: The fields with * are required!</p>
+        </form>
+      </div>
     </div>
   );
 };

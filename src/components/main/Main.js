@@ -8,7 +8,8 @@ import Hero from "../hero/Hero";
 import Highlights from "../highlights/Highlights";
 import Testimonials from "../testimonials/Testimonials";
 import About from "../about/About";
-import Login from "../login/Login";
+import Login from "../account/login/Login";
+import NewAccount from "../account/newAccount/NewAccount";
 import Menu from "../menu/Menu";
 
 import ShippingInfo from "../booking/shippingInfo/ShippingInfo";
@@ -69,6 +70,7 @@ const Main = () => {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/create-account" element={<NewAccount />} />
         <Route path="/menu" element={<Menu />} />
 
         <Route path="/shipping" element={<ShippingInfo />} />

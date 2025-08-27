@@ -1,16 +1,4 @@
-*,
-::before,
-::after {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-
-img {
-  display: block;
-}
 h3 {
-  font-family: "markazi text", Arial;
   color: white;
 
   /* Phones*/
@@ -28,9 +16,7 @@ h3 {
     font-size: 1rem;
   }
 }
-p {
-  font-family: karla, sans-serif;
-}
+
 li {
   list-style-type: none;
 }
