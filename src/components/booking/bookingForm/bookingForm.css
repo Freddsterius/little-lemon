@@ -52,7 +52,7 @@
   font-weight: 400;
 }
 
-input[type="radio"] {
+.boooking-form-input-group input[type="radio"] {
   width: 1.5rem;
 }
 

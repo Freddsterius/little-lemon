@@ -99,7 +99,7 @@
   display: flex;
   justify-content: space-between;
 }
-input[type="radio"] {
+.shipping-info-form-input-group input[type="radio"] {
   width: 1.5rem;
 }
 
