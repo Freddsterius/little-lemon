@@ -90,7 +90,7 @@
   flex-direction: column;
 }
 .card-details div input {
-  width: 25vw;
+  width: 28vw;
   max-width: 200px;
 }
 
@@ -100,7 +100,7 @@
   justify-content: space-between;
 }
 input[type="radio"] {
-  width: 1rem;
+  width: 1.5rem;
 }
 
 .book-btn {
