@@ -42,10 +42,10 @@ const ShippingInfo = () => {
           </div>
 
           <div className="shipping-info-form-input-group ">
-            <label htmlFor="card-number">* Card Number...</label>
+            <label htmlFor="card-number">* Card Number</label>
             <input
               type="text"
-              placeholder="Card Number"
+              placeholder="Card Number..."
               name="card-number"
               id="card-number"
               aria-label="Card Number"
@@ -54,7 +54,7 @@ const ShippingInfo = () => {
 
             <div className="card-details">
               <div>
-                <label htmlFor="card-exp-date">* Card Expiration Date</label>
+                <label htmlFor="card-exp-date">* Card Exp. Date</label>
                 <input
                   type="text"
                   aria-label="MM/YYYY"
