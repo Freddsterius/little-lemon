@@ -10,7 +10,7 @@
 }
 
 .create-container {
-  background-color: rgba(39, 37, 37, 0.4);
+  background-color: rgba(147, 150, 130, 0.8);
   border-radius: 15px;
   box-shadow: 1px 1px 15px rgba(192, 191, 191, 0.5);
   padding: 20px 10px;
@@ -46,10 +46,10 @@
 }
 .create-account-form .input-group input {
   font-size: 1.2rem;
-  padding: 0.3rem;
+  padding: 0.4rem;
   border: none;
   outline: none;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.7);
   color: rgb(0, 0, 0);
   font-weight: lighter;
