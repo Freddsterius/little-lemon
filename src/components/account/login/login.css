@@ -13,9 +13,9 @@
   background-color: rgba(147, 150, 130, 0.8);
   border-radius: 15px;
   box-shadow: 1px 1px 15px rgba(230, 212, 212, 0.5);
-  padding: 20px 12px;
-  width: 90vw; /*or 80%*/
-  max-width: 600px;
+  padding: 1.25rem 0.75rem;
+  width: 90vw;
+  max-width: 37.5rem;
   margin-block: 1rem;
 }
 
