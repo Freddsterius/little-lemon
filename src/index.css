@@ -37,8 +37,7 @@ button:hover {
 :root {
   /* --dark: #000000; */
   --dark: #001aff;
-  /* --light: #ffffff; */
-  --light: #ff0000;
+  --light: #ffffff;
 
   --primary-color1: #495e57;
   --primary-color2: #f4ce14;
