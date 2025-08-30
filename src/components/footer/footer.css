@@ -1,5 +1,5 @@
 h3 {
-  color: white;
+  color: var(--light);
 
   /* Phones*/
   @media (max-width: 600px) {
@@ -23,10 +23,10 @@ li {
 
 a,
 .doormat-nav-link {
-  color: #000000;
+  color: var(--highlight-color2);
   text-decoration: none;
   font-size: 0.8rem;
-  transition: color 150ms;
+  transition: color var(--transition-timing);
 }
 a:hover {
   cursor: pointer;

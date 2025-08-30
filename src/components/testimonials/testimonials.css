@@ -1,6 +1,6 @@
 .testimonials-container {
   min-height: 80vh;
-  background-color: rgb(202, 202, 202);
+  background-color: var(--secondary-color2);
   padding: 1rem 1.4rem 2rem 1.4rem;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
 }
 
 .testimonials-title {
-  color: #000000;
+  color: var(--dark);
   font-size: 1.3rem;
   font-weight: bold;
   padding-bottom: 2.5rem;
@@ -74,10 +74,10 @@
 }
 
 .rating-card {
-  border: 0.18rem solid black;
+  border: 0.18rem solid var(--dark);
   overflow: hidden;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: var(--light);
   padding: 0.6rem;
 }
 .photo-name-container {

@@ -33,3 +33,31 @@ button:hover {
   cursor: pointer;
   opacity: 0.7;
 }
+
+:root {
+  /* --dark: #000000; */
+  --dark: #001aff;
+  /* --light: #ffffff; */
+  --light: #ff0000;
+
+  --primary-color1: #495e57;
+  --primary-color2: #f4ce14;
+
+  --secondary-color1: #ee9972;
+  --secondary-color2: #fbdabb;
+
+  --highlight-color1: #edefee;
+  --highlight-color2: #333333;
+
+  --btn-border-radius: 50px;
+  --img-border-radius: 100px;
+
+  --form-shadow: 1px 1px 10px rgba(255, 0, 0, 0.8);
+  --form-container-padding: 10px 100px; /* 1.25rem 0.75rem;*/
+  --form-input-border-radius: 50px;
+  --form-input-padding: 0px;
+  --form-btn-input-border-radius: 0rem;
+  --form-btn-input-hover-color: #14daf4;
+
+  --transition-timing: 2000ms;
+}

@@ -52,7 +52,7 @@
 .about-text-container h1 {
   /* mobile 1st or extra small  */
   font-size: 1.7rem;
-  color: #f4ce14;
+  color: var(--primary-color2);
 
   /*small*/
   @media (min-width: 576px) {
@@ -82,7 +82,7 @@
 .about-text-container h2 {
   /* mobile 1st or extra small  */
   font-size: 1.3rem;
-  color: #ffffff;
+  color: var(--light);
 
   /*small*/
   @media (min-width: 576px) {
@@ -112,7 +112,7 @@
 .about-text-container p {
   /* mobile 1st or extra small  */
   font-size: 1rem;
-  color: #ffffff;
+  color: var(--light);
   line-height: 1.3rem;
   padding-block: 1rem;
 
@@ -158,8 +158,8 @@
 }
 .about-images-container img {
   position: absolute;
-  height: 240px;
-  border-radius: 10px;
+  height: 15rem;
+  border-radius: var(--img-border-radius);
   width: 180px;
 
   /*large and beyond*/

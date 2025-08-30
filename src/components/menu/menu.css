@@ -98,7 +98,7 @@
   }
 }
 .menu-dish-card {
-  background-color: whitesmoke;
+  background-color: var(--highlight-color1);
   border: 2px solid black;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -123,18 +123,18 @@
 }
 
 .menu-dish-card .dish-name {
-  color: rgb(0, 0, 0);
+  color: var(--dark);
   font-size: 1rem;
   font-weight: bold;
 }
 .menu-dish-card .price {
-  color: orange;
+  color: var(--secondary-color1);
   font-size: 1rem;
   position: absolute;
   right: 10px;
 }
 .dish-description {
-  color: black;
+  color: var(--dark);
   font-size: 0.9rem;
   padding-inline: 15px;
   line-height: 1.1rem;
@@ -143,14 +143,19 @@
 .delivery-btn {
   font-size: 1rem;
   font-weight: bold;
-  background-color: #ffdf3f;
+  background-color: var(--primary-color2);
   border: none;
-  border-radius: 5px;
-  color: rgb(0, 0, 0);
+  border-radius: var(--btn-border-radius);
+  color: var(--dark);
   white-space: nowrap;
   padding: 0.2rem 0.5rem;
   position: absolute;
   left: 0.5rem;
   bottom: 0.8rem;
-  transition: opacity 150ms;
+  transition: opacity var(--transition-timing);
+  display: flex;
+  gap: 0.5rem;
+}
+.delivery-btn img {
+  width: 1rem;
 }

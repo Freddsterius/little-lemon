@@ -2,6 +2,7 @@ import React from "react";
 import greekSalad from "../../assets/highlights/greek-salad-50.webp";
 import bruchetta from "../../assets/highlights/bruschetta-50.webp";
 import lemeonDessert from "../../assets/highlights/lemon-dessert.jpg";
+import deliveryIcon from "./../../assets/icons/delivery.jpg";
 import "./menu.css";
 
 const Menu = () => {
@@ -20,7 +21,9 @@ const Menu = () => {
             Chicago style feta cheese, garnished with crunchy garlic and rosemay
             croutons.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="menu-dish-card">
@@ -33,7 +36,9 @@ const Menu = () => {
             Our Bruschetta is made from grilled bread that has been smeared with
             garlic and seasoned with salt and olive oil.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="menu-dish-card">
@@ -46,7 +51,9 @@ const Menu = () => {
             This comes straight from grandma’s recipe book, every last
             ingredient has been sourced and is as authentic as can be imagined.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="menu-dish-card">
@@ -60,7 +67,9 @@ const Menu = () => {
             Chicago style feta cheese, garnished with crunchy garlic and rosemay
             croutons.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="menu-dish-card">
@@ -73,7 +82,9 @@ const Menu = () => {
             Our Bruschetta is made from grilled bread that has been smeared with
             garlic and seasoned with salt and olive oil.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="menu-dish-card">
@@ -86,7 +97,9 @@ const Menu = () => {
             This comes straight from grandma’s recipe book, every last
             ingredient has been sourced and is as authentic as can be imagined.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="menu-dish-card">
@@ -100,7 +113,9 @@ const Menu = () => {
             Chicago style feta cheese, garnished with crunchy garlic and rosemay
             croutons.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="menu-dish-card">
@@ -113,7 +128,9 @@ const Menu = () => {
             Our Bruschetta is made from grilled bread that has been smeared with
             garlic and seasoned with salt and olive oil.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="menu-dish-card">
@@ -126,7 +143,9 @@ const Menu = () => {
             This comes straight from grandma’s recipe book, every last
             ingredient has been sourced and is as authentic as can be imagined.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="menu-dish-card">
@@ -140,7 +159,9 @@ const Menu = () => {
             Chicago style feta cheese, garnished with crunchy garlic and rosemay
             croutons.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="menu-dish-card">
@@ -153,7 +174,9 @@ const Menu = () => {
             Our Bruschetta is made from grilled bread that has been smeared with
             garlic and seasoned with salt and olive oil.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="menu-dish-card">
@@ -166,7 +189,9 @@ const Menu = () => {
             This comes straight from grandma’s recipe book, every last
             ingredient has been sourced and is as authentic as can be imagined.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
       </div>
     </div>

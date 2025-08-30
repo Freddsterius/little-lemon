@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./shippingInfo.css";
 
 const ShippingInfo = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    cardNumber: "",
+    cardExpDate: "",
+    cardCvv: "",
+    billingAdrress: "",
+    countryRegion: "",
+  });
+
+  const [confirm, setConfirm] = useState(true);
+  const handleConfirm = (event) => {
+    setConfirm(event.target.checked);
+  };
+
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
+
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
@@ -11,7 +29,7 @@ const ShippingInfo = () => {
   };
 
   return (
-    <div className="shipping-info-full-sreen-container">
+    <div className="shipping-info-full-screen-container">
       <section className="little-lemon">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
@@ -35,10 +53,16 @@ const ShippingInfo = () => {
               type="text"
               placeholder="First Name/Last Name..."
               name="name"
+              value={formData.name}
+              onChange={handleChange}
               id="name"
               aria-label="Name"
               /*required*/
             />
+            <p>You typed: {formData.name}</p>
+            {formData.name == "" && (
+              <p style={{ color: "red" }}>⚠️ Name is required!</p>
+            )}
           </div>
 
           <div className="shipping-info-form-input-group ">
@@ -46,11 +70,17 @@ const ShippingInfo = () => {
             <input
               type="text"
               placeholder="Card Number..."
-              name="card-number"
+              name="cardNumber"
+              value={formData.cardNumber}
+              onChange={handleChange}
               id="card-number"
               aria-label="Card Number"
               /*required*/
             />
+            <p>You typed: {formData.cardNumber}</p>
+            {formData.cardNumber == "" && (
+              <p style={{ color: "red" }}>⚠️ Card Number is required!</p>
+            )}
 
             <div className="card-details">
               <div>
@@ -59,10 +89,16 @@ const ShippingInfo = () => {
                   type="text"
                   aria-label="MM/YYYY"
                   placeholder="MM/YYYY"
-                  name="card-exp-date"
+                  name="cardExpDate"
+                  value={formData.cardExpDate}
+                  onChange={handleChange}
                   id="card-exp-date"
                   /*required*/
                 />
+                <p>You typed: {formData.cardExpDate}</p>
+                {formData.cardExpDate == "" && (
+                  <p style={{ color: "red" }}>⚠️ Card Exp. Date is required!</p>
+                )}
               </div>
 
               <div>
@@ -70,11 +106,17 @@ const ShippingInfo = () => {
                 <input
                   type="text"
                   placeholder="CVV"
-                  name="card-cvv"
+                  name="cardCvv"
+                  value={formData.cardCvv}
+                  onChange={handleChange}
                   id="card-cvv"
                   aria-label="CVV"
                   /*required*/
                 />
+                <p>You typed: {formData.cardCvv}</p>
+                {formData.cardCvv == "" && (
+                  <p style={{ color: "red" }}>⚠️ CVV is required!</p>
+                )}
               </div>
             </div>
           </div>
@@ -85,10 +127,16 @@ const ShippingInfo = () => {
               type="text"
               placeholder="Billing Adrress..."
               id="billing-adrress"
-              name="billing-adrress"
+              name="billingAdrress"
+              value={formData.billingAdrress}
+              onChange={handleChange}
               aria-label="Billing Adrress"
               /*required*/
             />
+            <p>You typed: {formData.billingAdrress}</p>
+            {formData.billingAdrress == "" && (
+              <p style={{ color: "red" }}>⚠️ Billing Adrress is required!</p>
+            )}
           </div>
 
           <div className="shipping-info-form-input-group">
@@ -97,35 +145,34 @@ const ShippingInfo = () => {
               type="text"
               placeholder="Country/Region"
               id="country-region"
-              name="country-region"
+              name="countryRegion"
+              value={formData.countryRegion}
+              onChange={handleChange}
               aria-label="Country/Region"
               /*required*/
             />
+            <p>You typed: {formData.countryRegion}</p>
+            {formData.countryRegion == "" && (
+              <p style={{ color: "red" }}>⚠️ Country/Region is required!</p>
+            )}
           </div>
 
           <div className="shipping-info-form-input-group">
-            <div className="conf-text">
-              <label htmlFor="via-text">
-                Send me booking confirmation via text
-              </label>
-              <input
-                type="radio"
-                id="via-text"
-                name="confirmation-preference"
-              />
-            </div>
-
             <div className="conf-email">
+              <input
+                type="checkbox"
+                id="via-email"
+                name="confirmationPreference"
+                value="viaEmail"
+                checked={confirm}
+                onChange={handleConfirm}
+              />
               <label htmlFor="via-email">
                 Send me booking confirmation via email
               </label>
-              <input
-                type="radio"
-                id="via-email"
-                name="confirmation-preference"
-                checked
-              />
             </div>
+
+            <h5>You do {confirm ? "AGRRE" : "NOT AGRRE."} to this.</h5>
           </div>
 
           <button type="submit" className="book-btn" aria-label="Submit Form">

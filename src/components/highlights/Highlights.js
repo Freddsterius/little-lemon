@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import greekSalad from "../../assets/highlights/greek-salad-50.webp";
 import bruchetta from "../../assets/highlights/bruschetta-50.webp";
 import lemeonDessert from "../../assets/highlights/lemon-dessert.jpg";
+import deliveryIcon from "../../assets/icons/delivery.jpg";
 import "./highlights.css";
 
 const Highlights = () => {
@@ -19,7 +20,8 @@ const Highlights = () => {
         <div className="dish-card">
           <img src={greekSalad} alt="a delicious greek salad" />
           <div className="dish-price-container">
-            <p className="dish-name">Greek Salad </p>{" "}
+            <p className="dish-name">Greek Salad</p>
+
             <p className="price">$12.99</p>
           </div>
           <p className="dish-description">
@@ -27,7 +29,9 @@ const Highlights = () => {
             Chicago style feta cheese, garnished with crunchy garlic and rosemay
             croutons.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="dish-card">
@@ -40,7 +44,9 @@ const Highlights = () => {
             Our Bruschetta is made from grilled bread that has been smeared with
             garlic and seasoned with salt and olive oil.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
 
         <div className="dish-card">
@@ -53,7 +59,9 @@ const Highlights = () => {
             This comes straight from grandma’s recipe book, every last
             ingredient has been sourced and is as authentic as can be imagined.
           </p>
-          <button className="delivery-btn">Order a delivery 🚘</button>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
         </div>
       </div>
     </section>

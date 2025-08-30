@@ -10,10 +10,10 @@
 }
 
 .create-container {
-  background-color: rgba(147, 150, 130, 0.8);
-  border-radius: 15px;
-  box-shadow: 1px 1px 15px rgba(192, 191, 191, 0.5);
-  padding: 1.25rem 0.75rem;
+  background-color: var(--highlight-color2);
+  border-radius: var(--form-input-border-radius);
+  box-shadow: var(--form-shadow);
+  padding: var(--form-container-padding);
   width: 90vw;
   max-width: 37.5rem;
   margin-block: 1rem;
@@ -21,7 +21,7 @@
 
 .create-title {
   margin: 0;
-  color: white;
+  color: var(--light);
   text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
@@ -30,14 +30,12 @@
 .create-account-form {
   display: flex;
   flex-direction: column;
-  color: white;
   gap: 1.25rem;
   margin-top: 1.25rem;
 }
 .create-account-form .input-group {
   display: flex;
   flex-direction: column;
-  color: white;
   gap: 7px;
 }
 .create-account-form .input-group label {
@@ -46,39 +44,41 @@
 }
 .create-account-form .input-group input {
   font-size: 1.2rem;
-  padding: 0.4rem;
+  padding: var(--form-input-padding);
   border: none;
   outline: none;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.7);
-  color: rgb(0, 0, 0);
+  border-radius: var(--form-input-border-radius);
+  background-color: var(--highlight-color1);
+  color: var(--dark);
   font-weight: lighter;
 }
 .create-account-form .input-group input::placeholder {
   font-size: 0.8rem;
-  color: rgb(70, 70, 70);
+  color: var(--dark);
 }
 
 .create-account-form .input-group input:focus {
-  box-shadow: 0 0 0 1.5px rgb(0, 0, 255);
+  box-shadow: 0 0 0 1.5px var(--primary-color2);
 }
 
 .create-button {
+  color: var(--dark);
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: lighter;
-  background-color: #f4ce14;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 10rem;
+  background-color: var(--primary-color2);
+  border: 1px solid var(--dark);
+  border-radius: var(--form-btn-input-border-radius);
+  outline: none;
   outline: none;
   cursor: pointer;
+  transition: background-color var(--transition-timing);
 }
-.create-button:hover,
-.create-button:focus {
-  background-color: #14daf4;
+.create-button:hover {
+  background-color: var(--form-btn-input-hover-color);
 }
 
 .note {
-  color: white;
+  color: var(--light);
   font-size: 0.8rem;
 }
