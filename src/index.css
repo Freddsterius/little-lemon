@@ -53,7 +53,7 @@ button:hover {
   --img-border-radius: 100px;
 
   --form-shadow: 1px 1px 10px rgba(255, 0, 0, 0.8);
-  --form-container-padding: 10px 100px; /* 1.25rem 0.75rem;*/
+  --form-container-padding: 1.25rem 0.75rem;
   --form-input-border-radius: 0.4rem;
   --form-input-padding: 0.5rem;
   --form-btn-input-border-radius: 5rem;
