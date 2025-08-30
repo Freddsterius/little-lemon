@@ -48,7 +48,7 @@ button:hover {
   --highlight-color2: #333333;
 
   --btn-border-radius: 50px;
-  --img-border-radius: 100px;
+  --img-border-radius: 0.625rem;
 
   --form-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
   --form-container-padding: 1.25rem 0.75rem;
