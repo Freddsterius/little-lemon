@@ -145,10 +145,11 @@
     line-height: 1.8rem;
   }
 }
+
 .about-images-container {
   position: relative;
   width: 300px;
-  height: 450px;
+  height: 350px;
   margin: auto;
 
   /*large and beyond*/
