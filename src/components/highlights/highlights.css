@@ -69,6 +69,7 @@
   }
 }
 .title-button-container button {
+  color: var(--dark);
   background-color: var(--primary-color2);
   border: none;
   border-radius: var(--btn-border-radius);
