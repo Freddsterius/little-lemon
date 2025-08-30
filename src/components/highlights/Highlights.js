@@ -63,6 +63,21 @@ const Highlights = () => {
             Order a delivery <img src={deliveryIcon} />
           </button>
         </div>
+
+        <div className="dish-card">
+          <img src={lemeonDessert} alt="a delicious lemon dessert" />
+          <div className="dish-price-container">
+            <p className="dish-name">Lemon Dessert</p>{" "}
+            <p className="price">$5.00</p>
+          </div>
+          <p className="dish-description">
+            This comes straight from grandma’s recipe book, every last
+            ingredient has been sourced and is as authentic as can be imagined.
+          </p>
+          <button className="delivery-btn">
+            Order a delivery <img src={deliveryIcon} />
+          </button>
+        </div>
       </div>
     </section>
   );
