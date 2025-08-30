@@ -56,7 +56,7 @@ button:hover {
   --form-container-padding: 10px 100px; /* 1.25rem 0.75rem;*/
   --form-input-border-radius: 50px;
   --form-input-padding: 0px;
-  --form-btn-input-border-radius: 0rem;
+  --form-btn-input-border-radius: 5rem;
   --form-btn-input-hover-color: #14daf4;
 
   --transition-timing: 200ms;
