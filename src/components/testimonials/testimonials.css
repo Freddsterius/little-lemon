@@ -73,7 +73,7 @@
   padding-top: 5rem;
 }
 
-.rating-card {
+/* .rating-card {
   border: 0.18rem solid var(--dark);
   overflow: hidden;
   border-radius: 5px;
@@ -89,4 +89,89 @@
 .rating-card img {
   border-radius: 50%;
   border: 0.1rem solid black;
+} */
+
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.cards-container {
+  padding: 20px 50px;
+  background-color: rgb(138, 138, 138);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: azure;
+}
+
+.image-content,
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image-content {
+  padding: 20px 0;
+  background-color: #f4ce14;
+  border-radius: 20px;
+}
+
+.card-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #4070f4;
+}
+.text-content {
+  padding: 10px 14px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  padding-bottom: 5px;
+}
+.description {
+  font-size: 14px;
+  color: #2c2c2c;
+  text-align: center;
+}
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 4px;
+  margin: 14px;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #265df2;
+}
+
+*/

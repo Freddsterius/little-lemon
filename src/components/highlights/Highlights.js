@@ -7,7 +7,7 @@ import "./highlights.css";
 
 import Card from "../cards/Card";
 
-const dish = [
+const dishes = [
   {
     image: greekSalad,
     name: "Greek Salad",
@@ -43,7 +43,7 @@ const Highlights = () => {
 
       <div className="dish-cards-container">
         <div className="dish-cards-container">
-          {dish.map((dish) => (
+          {dishes.map((dish) => (
             <Card
               key={dish.name}
               image={dish.image}

@@ -1,0 +1,30 @@
+.rating-card {
+  border: 0.18rem solid var(--dark);
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: var(--light);
+  padding: 0.6rem;
+}
+
+.rating-score {
+  text-align: center;
+}
+
+.photo-name-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1rem;
+}
+.photo-name-container img {
+  border-radius: 50%;
+  border: 0.1rem solid var(--dark);
+}
+
+.photo-name-container p {
+  color: red;
+}
+
+.review-text {
+  background-color: blanchedalmond;
+}

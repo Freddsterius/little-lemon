@@ -1,6 +1,7 @@
 .hero-container {
   background-color: var(--primary-color1);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
@@ -9,6 +10,7 @@
 
   /*small*/
   @media (min-width: 576px) {
+    flex-direction: row;
     gap: 3rem;
     padding-inline: 4rem;
   }
@@ -40,6 +42,10 @@
 
 .hero-text-container {
   flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.4rem;
 }
 .hero-text-container h1 {
   font-size: 1.7rem;
@@ -178,17 +184,18 @@
 .hero-image-container {
   flex: 2;
   display: flex;
-  position: relative;
+  justify-content: center;
 }
 .hero-image-container img {
   max-width: 90%;
   height: auto;
   border-radius: var(--img-border-radius);
-  transform: translateY(35px);
+  transform: translateY(20px);
 
   /*small*/
   @media (min-width: 576px) {
     transform: translateY(40px);
+    max-width: 90%;
   }
 
   /*extra large*/
