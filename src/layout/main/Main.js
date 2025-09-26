@@ -3,17 +3,17 @@ import { fetchAPI, submitAPI } from "../../APIs/api";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
 import HomePage from "../homepage/HomePage";
-import BookingPage from "../booking/bookingPage/BookingPage";
-import Hero from "../hero/Hero";
-import Highlights from "../highlights/Highlights";
-import Testimonials from "../testimonials/Testimonials";
-import About from "../about/About";
-import Login from "../account/login/Login";
-import NewAccount from "../account/newAccount/NewAccount";
-import Menu from "../menu/Menu";
+import BookingPage from "../../pages/booking/bookingPage/BookingPage";
+import Hero from "../../pages/hero/Hero";
+import Highlights from "../../pages/highlights/Highlights";
+import Testimonials from "../../pages/testimonials/Testimonials";
+import About from "../../pages/about/About";
+import Login from "../../pages/account/login/Login";
+import NewAccount from "../../pages/account/newAccount/NewAccount";
+import Menu from "../../pages/menu/Menu";
 
-import ShippingInfo from "../booking/shippingInfo/ShippingInfo";
-import ConfirmedBooking from "../booking/confirmedBooking/ConfirmedBooking";
+import ShippingInfo from "../../pages/booking/shippingInfo/ShippingInfo";
+import ConfirmedBooking from "../../pages/booking/confirmedBooking/ConfirmedBooking";
 
 function initializeTimes() {
   const today = new Date();

@@ -154,7 +154,7 @@
 
   /*large and beyond*/
   @media (min-width: 992px) {
-    transform: translateY(2rem);
+    transform: translateY(-1rem);
   }
 }
 .about-images-container img {

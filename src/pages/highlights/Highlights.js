@@ -5,7 +5,7 @@ import bruchetta from "../../assets/highlights/bruschetta-50.webp";
 import lemeonDessert from "../../assets/highlights/lemon-dessert.jpg";
 import "./highlights.css";
 
-import Card from "../cards/Card";
+import MenuCard from "../../components/cards/menuCard/MenuCard";
 
 const dishes = [
   {
@@ -44,7 +44,7 @@ const Highlights = () => {
       <div className="dish-cards-container">
         <div className="dish-cards-container">
           {dishes.map((dish) => (
-            <Card
+            <MenuCard
               key={dish.name}
               image={dish.image}
               name={dish.name}

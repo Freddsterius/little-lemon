@@ -4,7 +4,7 @@ import bruchetta from "../../assets/highlights/bruschetta-50.webp";
 import lemeonDessert from "../../assets/highlights/lemon-dessert.jpg";
 import "./menu.css";
 
-import Card from "../cards/Card";
+import Card from "../../components/cards/menuCard/MenuCard";
 
 const dish = [
   {

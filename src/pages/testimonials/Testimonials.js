@@ -4,7 +4,7 @@ import profilePhotoi from "../../assets/testimonials/grad2.jpg";
 import profilePhotoii from "../../assets/testimonials/grad3.jpg";
 import profilePhotoiii from "../../assets/testimonials/grad4.jpg";
 import "./testimonials.css";
-import TestimonialCard from "../cards/testimonialsCard/TestimonialCard";
+import TestimonialCard from "../../components/cards/testimonialsCard/TestimonialCard";
 
 const testimonials = [
   {

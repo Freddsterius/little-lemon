@@ -1,7 +1,7 @@
 import React from "react";
-import "./card.css";
-import greekSalad from "./../../assets/highlights/greek-salad-50.webp";
-import deliveryIcon from "./../../assets/icons/delivery.jpg";
+import "./menuCard.css";
+import greekSalad from "../../../assets/highlights/greek-salad-50.webp";
+import deliveryIcon from "../../../assets/icons/delivery.jpg";
 
 const Card = ({ image, name, price, description }) => {
   return (
